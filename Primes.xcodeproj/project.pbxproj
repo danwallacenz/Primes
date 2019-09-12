@@ -13,6 +13,7 @@
 		3C9DAB7C232B05DA0020C4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB7B232B05DA0020C4BC /* Assets.xcassets */; };
 		3C9DAB7F232B05DA0020C4BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB7E232B05DA0020C4BC /* Preview Assets.xcassets */; };
 		3C9DAB82232B05DA0020C4BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB80232B05DA0020C4BC /* LaunchScreen.storyboard */; };
+		3C9DAB8A232B06630020C4BC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB89232B06630020C4BC /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3C9DAB7E232B05DA0020C4BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3C9DAB81232B05DA0020C4BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C9DAB83232B05DA0020C4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C9DAB89232B06630020C4BC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,13 @@
 		3C9DAB74232B05D80020C4BC /* Primes */ = {
 			isa = PBXGroup;
 			children = (
-				3C9DAB75232B05D80020C4BC /* AppDelegate.swift */,
-				3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */,
 				3C9DAB79232B05D80020C4BC /* ContentView.swift */,
+				3C9DAB89232B06630020C4BC /* Utils.swift */,
 				3C9DAB7B232B05DA0020C4BC /* Assets.xcassets */,
 				3C9DAB80232B05DA0020C4BC /* LaunchScreen.storyboard */,
 				3C9DAB83232B05DA0020C4BC /* Info.plist */,
+				3C9DAB75232B05D80020C4BC /* AppDelegate.swift */,
+				3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */,
 				3C9DAB7D232B05DA0020C4BC /* Preview Content */,
 			);
 			path = Primes;
@@ -149,6 +152,7 @@
 				3C9DAB76232B05D80020C4BC /* AppDelegate.swift in Sources */,
 				3C9DAB78232B05D80020C4BC /* SceneDelegate.swift in Sources */,
 				3C9DAB7A232B05D80020C4BC /* ContentView.swift in Sources */,
+				3C9DAB8A232B06630020C4BC /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

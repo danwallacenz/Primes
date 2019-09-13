@@ -25,17 +25,14 @@ struct CounterView: View {
             HStack {
                 
                 Button(action: {
-//                    self.store.value.count -= 1
-//                    self.store.value = counterReducer(state: self.store.value, action: .decrTapped)
                     self.store.send(.counter(.decrTapped))
                 }) {
                     Text("-")
                 }
+                
                 Text("\(self.store.value.count)").foregroundColor(color)
 
                 Button(action: {
-//                    self.store.value.count += 1
-//                    self.store.value = counterReducer(state: self.store.value, action: .incrTapped)
                     self.store.send(.counter(.incrTapped))
                 }) {
                      Text("+")
@@ -53,10 +50,10 @@ struct CounterView: View {
         }.font(.title)
         .navigationBarTitle("Counter demo")
         .sheet(isPresented: $isThisPrimeModalPresented)
-        { IsPrimeModalView(store: self.store) }
-        .alert(item: $alertNthPrime) { n in
+            { IsPrimeModalView(store: self.store) }
+        .alert(item: $alertNthPrime) { nthPrime in
             Alert(
-                title: Text("The \(ordinal(self.store.value.count)) prime is \(n)"),
+                title: Text("The \(ordinal(self.store.value.count)) prime is \(nthPrime)"),
                 dismissButton: Alert.Button.default( Text("OK"))
             )
         }

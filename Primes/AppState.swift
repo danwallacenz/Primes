@@ -31,52 +31,48 @@ enum CounterAction {
     case incrTapped
 }
 
-enum FavouritePrimesAction {
+enum IsPrimeModalAction {
     case addFavouritePrimeTapped
     case removeFavouritePrimeTapped
 }
 
+enum FavouritePrimesAction {
+    case deleteFavouritePrime(IndexSet)
+}
+
 enum AppAction {
     case counter(CounterAction)
-    case favouritePrime(FavouritePrimesAction)
-    
-//    case decrTapped
-//    case incrTapped
-//    case addFavouritePrimeTapped
-//    case removeFavouritePrimeTapped
+    case isPrimeModal(IsPrimeModalAction)
+    case favouritePrimes(FavouritePrimesAction)
 }
 
 func appReducer(state: inout AppState,
                     action: AppAction) {
     switch action {
+        
     case .counter(.decrTapped):
         state.count -= 1
+    
     case .counter(.incrTapped):
         state.count += 1
-    case .favouritePrime(.addFavouritePrimeTapped):
+    
+    case .isPrimeModal(.addFavouritePrimeTapped):
         state.favouritePrimes.append(state.count)
         state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
 
-    case .favouritePrime(.removeFavouritePrimeTapped):
-        let count = state.count // must do this for inout
+    case .isPrimeModal(.removeFavouritePrimeTapped):
+        let count = state.count // must do this when using inout
         state.favouritePrimes.removeAll(where: { $0 == count })
         state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
-
+    
+    case .favouritePrimes(.deleteFavouritePrime(let indexSet)):
+        for index in indexSet {
+            let prime = state.favouritePrimes[index]
+            state.favouritePrimes.removeAll(where: { $0 == prime })
+            state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
+        }
     }
 }
-
-//    func removeFavouritePrimeAction() {
-//        self.store.value.favouritePrimes.removeAll(where: { $0 == self.store.value.count })
-//        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(self.store.value.count)))
-////        self.store.value.removeFavouritePrime()
-//    }
-//
-//    func addFavouritePrimeAction() {
-//        self.store.value.favouritePrimes.append(self.store.value.count)
-//        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(self.store.value.count)))
-///       self.store.value.addFavouritePrime()
-//    }
-
 
 struct AppState {
     
@@ -143,25 +139,3 @@ extension AppState: CustomStringConvertible {
         "count: \(count)\nfavourite primes:\(favouritePrimes)\nactivity: \(activityFeed)"
     }
 }
-
-//extension AppState {
-//  func addFavouritePrime() {
-//    self.favouritePrimes.append(self.count)
-//    self.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(self.count)))
-//  }
-//
-//  func removeFavouritePrime(_ prime: Int) {
-//    self.favouritePrimes.removeAll(where: { $0 == prime })
-//    self.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
-//  }
-//
-//  func removeFavouritePrime() {
-//    self.removeFavouritePrime(self.count)
-//  }
-//
-//  func removeFavouritePrimes(at indexSet: IndexSet) {
-//    for index in indexSet {
-//      self.removeFavouritePrime(self.favouritePrimes[index])
-//    }
-//  }
-//}

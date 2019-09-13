@@ -10,7 +10,7 @@ import SwiftUI
 
 struct FavoritePrimesView: View {
 
-    @ObservedObject var store: Store<AppState>
+    @ObservedObject var store: Store<AppState, CounterAction>
     
     var body: some View {
         List { ForEach(self.store.value.favouritePrimes) { favourite in

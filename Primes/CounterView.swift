@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CounterView: View {
     
-    @ObservedObject var store: Store<AppState>
+    @ObservedObject var store: Store<AppState, CounterAction>
     
     @State private var isThisPrimeModalPresented: Bool = false
     @State var alertNthPrime: Int?
@@ -24,12 +24,20 @@ struct CounterView: View {
         VStack {
             HStack {
                 
-                Button(action: { self.store.value.count -= 1 }) {
+                Button(action: {
+//                    self.store.value.count -= 1
+//                    self.store.value = counterReducer(state: self.store.value, action: .decrTapped)
+                    self.store.send(action: .decrTapped)
+                }) {
                     Text("-")
                 }
                 Text("\(self.store.value.count)").foregroundColor(color)
 
-                Button(action: { self.store.value.count += 1 }) {
+                Button(action: {
+//                    self.store.value.count += 1
+//                    self.store.value = counterReducer(state: self.store.value, action: .incrTapped)
+                    self.store.send(action: .incrTapped)
+                }) {
                      Text("+")
                 }
             }

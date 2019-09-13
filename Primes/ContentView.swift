@@ -21,6 +21,9 @@ struct ContentView: View {
                 NavigationLink(destination: FavoritePrimesView(state: state)) {
                     Text("Favourite primes")
                 }
+                NavigationLink(destination: ActivityFeedView(state: state)) {
+                    Text("Activity feed")
+                }
             }.navigationBarTitle("State management")
         }
     }

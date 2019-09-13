@@ -18,6 +18,8 @@
 		3C9DAB8E232B0F430020C4BC /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8D232B0F430020C4BC /* CounterView.swift */; };
 		3C9DAB90232B0F7A0020C4BC /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */; };
 		3C9DAB92232B0F9F0020C4BC /* FavouritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */; };
+		3C9DAB94232B46A60020C4BC /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB93232B46A60020C4BC /* Activity.swift */; };
+		3C9DAB96232B54A30020C4BC /* ActivityFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		3C9DAB8D232B0F430020C4BC /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeModalView.swift; sourceTree = "<group>"; };
 		3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePrimesView.swift; sourceTree = "<group>"; };
+		3C9DAB93232B46A60020C4BC /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +71,10 @@
 			isa = PBXGroup;
 			children = (
 				3C9DAB8B232B0EA30020C4BC /* AppState.swift */,
+				3C9DAB93232B46A60020C4BC /* Activity.swift */,
 				3C9DAB8D232B0F430020C4BC /* CounterView.swift */,
-				3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */,
 				3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */,
+				3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */,
 				3C9DAB79232B05D80020C4BC /* ContentView.swift */,
 				3C9DAB89232B06630020C4BC /* Utils.swift */,
 				3C9DAB7B232B05DA0020C4BC /* Assets.xcassets */,
@@ -78,6 +83,7 @@
 				3C9DAB75232B05D80020C4BC /* AppDelegate.swift */,
 				3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */,
 				3C9DAB7D232B05DA0020C4BC /* Preview Content */,
+				3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */,
 			);
 			path = Primes;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 				3C9DAB78232B05D80020C4BC /* SceneDelegate.swift in Sources */,
 				3C9DAB7A232B05D80020C4BC /* ContentView.swift in Sources */,
 				3C9DAB92232B0F9F0020C4BC /* FavouritePrimesView.swift in Sources */,
+				3C9DAB96232B54A30020C4BC /* ActivityFeedView.swift in Sources */,
 				3C9DAB8A232B06630020C4BC /* Utils.swift in Sources */,
+				3C9DAB94232B46A60020C4BC /* Activity.swift in Sources */,
 				3C9DAB90232B0F7A0020C4BC /* IsPrimeModalView.swift in Sources */,
 				3C9DAB8E232B0F430020C4BC /* CounterView.swift in Sources */,
 			);

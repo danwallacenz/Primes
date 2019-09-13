@@ -18,15 +18,11 @@ struct IsPrimeModalView: View {
                 Text("\(self.state.count) is prime :)")
 
                 if self.state.favouritePrimes.contains(self.state.count) {
-                    Button(action: {
-                        self.state.favouritePrimes.removeAll { $0 == self.state.count }
-                    }) {
+                    Button(action: removeFavouritePrimeAction) {
                         Text("Remove from favourite primes")
                     }
                 } else {
-                    Button(action: {
-                          self.state.favouritePrimes.append(self.state.count)
-                      }) {
+                    Button(action: addFavouritePrimeAction) {
                           Text("Add to favourite primes")
                       }
                 }
@@ -34,5 +30,23 @@ struct IsPrimeModalView: View {
                 Text("\(self.state.count) is not prime :(")
             }
         }
+    }
+    
+    func removeFavouritePrimeAction() {
+        self.state.favouritePrimes.removeAll { $0 == self.state.count }
+        self.state.activityFeed.append(
+            Activity(timestamp: Date(),
+                     type: .removedFavoritePrime(self.state.count)
+            )
+        )
+    }
+    
+    func addFavouritePrimeAction() {
+      self.state.favouritePrimes.append(self.state.count)
+      self.state.activityFeed.append(
+          Activity(timestamp: Date(),
+                   type: .addedFavoritePrime(self.state.count)
+          )
+      )
     }
 }

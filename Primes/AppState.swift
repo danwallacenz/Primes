@@ -22,7 +22,6 @@ class AppState: ObservableObject, Codable {
     @Published var activityFeed: [Activity] = [] {
         didSet {
             saveState()
-            print(self)
         }
     }
     
@@ -77,3 +76,24 @@ extension AppState: CustomStringConvertible {
     }
 }
 
+extension AppState {
+  func addFavouritePrime() {
+    self.favouritePrimes.append(self.count)
+    self.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(self.count)))
+  }
+
+  func removeFavouritePrime(_ prime: Int) {
+    self.favouritePrimes.removeAll(where: { $0 == prime })
+    self.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
+  }
+
+  func removeFavouritePrime() {
+    self.removeFavouritePrime(self.count)
+  }
+
+  func removeFavouritePrimes(at indexSet: IndexSet) {
+    for index in indexSet {
+      self.removeFavouritePrime(self.favouritePrimes[index])
+    }
+  }
+}

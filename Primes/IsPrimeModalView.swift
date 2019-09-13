@@ -33,20 +33,10 @@ struct IsPrimeModalView: View {
     }
     
     func removeFavouritePrimeAction() {
-        self.state.favouritePrimes.removeAll { $0 == self.state.count }
-        self.state.activityFeed.append(
-            Activity(timestamp: Date(),
-                     type: .removedFavoritePrime(self.state.count)
-            )
-        )
+        self.state.removeFavouritePrime()
     }
     
     func addFavouritePrimeAction() {
-      self.state.favouritePrimes.append(self.state.count)
-      self.state.activityFeed.append(
-          Activity(timestamp: Date(),
-                   type: .addedFavoritePrime(self.state.count)
-          )
-      )
+        self.state.addFavouritePrime()
     }
 }

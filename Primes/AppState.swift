@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-class AppState: ObservableObject, Codable {
+class AppState: ObservableObject {
     
     @Published var count = 0 {
         didSet { saveState() }
@@ -24,13 +24,9 @@ class AppState: ObservableObject, Codable {
             saveState()
         }
     }
-    
-    // MARK: -
-    
+
     init() {}
-    
-    // MARK: -
-    
+
     static func loadOrCreateAppState() -> AppState {
         if let jsonData = UserDefaults.standard.data(forKey: "APP_STATE"),
             let appState = try? JSONDecoder().decode(AppState.self, from: jsonData) {
@@ -41,18 +37,28 @@ class AppState: ObservableObject, Codable {
         }
     }
     
-    enum CodingKeys: String, CodingKey {
-        case count
-        case favouritePrimes
-        case activityFeed
-    }
-    
     required init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         count = try values.decode(Int.self, forKey: .count)
         favouritePrimes = try values.decode([Int].self, forKey: .favouritePrimes)
         activityFeed = try values.decode([Activity].self, forKey: .activityFeed)
     }
+}
+
+extension AppState: Codable {
+    
+    enum CodingKeys: String, CodingKey {
+        case count
+        case favouritePrimes
+        case activityFeed
+    }
+    
+//    required init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        count = try values.decode(Int.self, forKey: .count)
+//        favouritePrimes = try values.decode([Int].self, forKey: .favouritePrimes)
+//        activityFeed = try values.decode([Activity].self, forKey: .activityFeed)
+//    }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)

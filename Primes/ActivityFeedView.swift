@@ -9,13 +9,15 @@
 import SwiftUI
 
 struct ActivityFeedView: View {
-
-    @ObservedObject var state: AppState
+    
+    @ObservedObject var store: Store<AppState>
     
     var body: some View {
-        List { ForEach(self.state.activityFeed) { activity in
+        List { ForEach(self.store.value.activityFeed.reversed()) { activity in
             Text("\(activity.description) ")
-            }
+        }.multilineTextAlignment(.leading)
+            .lineLimit(nil)
+            .padding()
         }.navigationBarTitle("Activity feed")
     }
 

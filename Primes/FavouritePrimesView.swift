@@ -10,17 +10,17 @@ import SwiftUI
 
 struct FavoritePrimesView: View {
 
-    @ObservedObject var state: AppState
+    @ObservedObject var store: Store<AppState>
     
     var body: some View {
-        List { ForEach(self.state.favouritePrimes) { favourite in
+        List { ForEach(self.store.value.favouritePrimes) { favourite in
             Text("\(favourite)")
         }.onDelete(perform: { indexSet in
-            //self.state.removeFavouritePrimes(at: indexSet)
+            //self.store.value.removeFavouritePrimes(at: indexSet)
             for index in indexSet {
-                let prime = self.state.favouritePrimes[index]
-                self.state.favouritePrimes.removeAll(where: { $0 == prime })
-                self.state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
+                let prime = self.store.value.favouritePrimes[index]
+                self.store.value.favouritePrimes.removeAll(where: { $0 == prime })
+                self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
             }
         })
         }.navigationBarTitle("Favourite primes")

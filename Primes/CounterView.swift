@@ -10,26 +10,26 @@ import SwiftUI
 
 struct CounterView: View {
     
-    @ObservedObject var state: AppState
+    @ObservedObject var store: Store<AppState>
     
     @State private var isThisPrimeModalPresented: Bool = false
     @State var alertNthPrime: Int?
     @State var nthPrimeButtonDisabled = false
     
     var color: Color {
-        state.count.isPrime ? .green : .red
+        self.store.value.count.isPrime ? .green : .red
     }
     
     var body: some View {
         VStack {
             HStack {
                 
-                Button(action: { self.state.count -= 1 }) {
+                Button(action: { self.store.value.count -= 1 }) {
                     Text("-")
                 }
-                Text("\(state.count)").foregroundColor(color)
+                Text("\(self.store.value.count)").foregroundColor(color)
 
-                Button(action: { self.state.count += 1 }) {
+                Button(action: { self.store.value.count += 1 }) {
                      Text("+")
                 }
             }
@@ -39,16 +39,16 @@ struct CounterView: View {
                    label: { Text("Is this prime?") })
             
             Button(action: nthPrimeButtonAction, label: {
-                Text("What is the \(ordinal(state.count)) prime?")
+                Text("What is the \(ordinal(self.store.value.count)) prime?")
                 }).disabled(nthPrimeButtonDisabled)
             
         }.font(.title)
         .navigationBarTitle("Counter demo")
         .sheet(isPresented: $isThisPrimeModalPresented)
-        { IsPrimeModalView(state: self.state) }
+        { IsPrimeModalView(store: self.store) }
         .alert(item: $alertNthPrime) { n in
             Alert(
-                title: Text("The \(ordinal(self.state.count)) prime is \(n)"),
+                title: Text("The \(ordinal(self.store.value.count)) prime is \(n)"),
                 dismissButton: Alert.Button.default( Text("OK"))
             )
         }
@@ -56,7 +56,7 @@ struct CounterView: View {
     
     func nthPrimeButtonAction() {
         self.nthPrimeButtonDisabled = true
-        nthPrime(self.state.count) { prime in
+        nthPrime(self.store.value.count) { prime in
             self.nthPrimeButtonDisabled = false
             self.alertNthPrime = prime // initiates Alert when non-nil
         }

@@ -45,12 +45,20 @@ extension Activity: Identifiable {
 }
 
 extension Activity: CustomStringConvertible {
+    
+    static var formatter: DateFormatter = {
+        let f = DateFormatter()
+        f.dateStyle = .full
+        f.timeStyle = .short
+        return f
+    }()
+    
     var description: String {
         switch type {
         case .addedFavoritePrime(let count):
-            return "Added \(count) at \(timestamp)"
+            return "Added [ \(count) ] \(Activity.formatter.string(from: timestamp))"
         case .removedFavoritePrime(let count):
-            return "Removed \(count) at \(timestamp)"
+            return "Removed [ \(count) ] \(Activity.formatter.string(from: timestamp))"
         }
     }
 }

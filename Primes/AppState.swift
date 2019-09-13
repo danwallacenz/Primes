@@ -9,17 +9,25 @@
 import Foundation
 import Combine
 
-class AppState: ObservableObject {
+final class Store<Value>: ObservableObject {
+  @Published var value: Value
+
+  init(initialValue: Value) {
+    self.value = initialValue
+  }
+}
+
+struct AppState {
     
-    @Published var count = 0 {
+    var count = 0 {
         didSet { saveState() }
     }
     
-    @Published var favouritePrimes: [Int] = [] {
+    var favouritePrimes: [Int] = [] {
         didSet { saveState() }
     }
     
-    @Published var activityFeed: [Activity] = [] {
+    var activityFeed: [Activity] = [] {
         didSet {
             saveState()
         }
@@ -36,13 +44,6 @@ class AppState: ObservableObject {
             return AppState()
         }
     }
-    
-    required init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        count = try values.decode(Int.self, forKey: .count)
-        favouritePrimes = try values.decode([Int].self, forKey: .favouritePrimes)
-        activityFeed = try values.decode([Activity].self, forKey: .activityFeed)
-    }
 }
 
 extension AppState: Codable {
@@ -53,12 +54,12 @@ extension AppState: Codable {
         case activityFeed
     }
     
-//    required init(from decoder: Decoder) throws {
-//        let values = try decoder.container(keyedBy: CodingKeys.self)
-//        count = try values.decode(Int.self, forKey: .count)
-//        favouritePrimes = try values.decode([Int].self, forKey: .favouritePrimes)
-//        activityFeed = try values.decode([Activity].self, forKey: .activityFeed)
-//    }
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        count = try values.decode(Int.self, forKey: .count)
+        favouritePrimes = try values.decode([Int].self, forKey: .favouritePrimes)
+        activityFeed = try values.decode([Activity].self, forKey: .activityFeed)
+    }
     
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)

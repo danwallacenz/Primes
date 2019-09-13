@@ -10,14 +10,14 @@ import SwiftUI
 
 struct IsPrimeModalView: View {
     
-    @ObservedObject var state: AppState
+    @ObservedObject var store: Store<AppState>
     
     var body: some View {
         VStack {
-            if state.count.isPrime {
-                Text("\(self.state.count) is prime :)")
+            if self.store.value.count.isPrime {
+                Text("\(self.store.value.count) is prime :)")
 
-                if self.state.favouritePrimes.contains(self.state.count) {
+                if self.store.value.favouritePrimes.contains(self.store.value.count) {
                     Button(action: removeFavouritePrimeAction) {
                         Text("Remove from favourite primes")
                     }
@@ -27,20 +27,20 @@ struct IsPrimeModalView: View {
                       }
                 }
             } else {
-                Text("\(self.state.count) is not prime :(")
+                Text("\(self.store.value.count) is not prime :(")
             }
         }
     }
     
     func removeFavouritePrimeAction() {
-        self.state.favouritePrimes.removeAll(where: { $0 == self.state.count })
-        self.state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(self.state.count)))
-//        self.state.removeFavouritePrime()
+        self.store.value.favouritePrimes.removeAll(where: { $0 == self.store.value.count })
+        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(self.store.value.count)))
+//        self.store.value.removeFavouritePrime()
     }
     
     func addFavouritePrimeAction() {
-        self.state.favouritePrimes.append(self.state.count)
-        self.state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(self.state.count)))
-//        self.state.addFavouritePrime()
+        self.store.value.favouritePrimes.append(self.store.value.count)
+        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(self.store.value.count)))
+//        self.store.value.addFavouritePrime()
     }
 }

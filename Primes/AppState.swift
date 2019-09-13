@@ -11,17 +11,18 @@ import Combine
 
 final class Store<Value, Action>: ObservableObject {
     
-    let reducer: (Value, Action) -> Value
+    let reducer: (inout Value, Action) -> Void
     
     @Published var value: Value
 
-    init(initialValue: Value, reducer: @escaping (Value, Action) -> Value ) {
+    init(initialValue: Value,
+         reducer: @escaping (inout Value, Action) -> Void) {
         self.value = initialValue
         self.reducer = reducer
     }
     
     func send(action: Action) {
-        self.value = reducer(value, action)
+        reducer(&value, action)
     }
 }
 
@@ -30,16 +31,17 @@ enum CounterAction {
   case incrTapped
 }
 
-func counterReducer(state: AppState, action: CounterAction) -> AppState {
-    var copy = state
+func counterReducer(state: inout AppState,
+                    action: CounterAction) {
     switch action {
     case .decrTapped:
-        copy.count -= 1
+        state.count -= 1
     case .incrTapped:
-        copy.count += 1
+        state.count += 1
     }
-    return copy
 }
+
+//let myCounterReducer = counterReducer
 
 struct AppState {
     

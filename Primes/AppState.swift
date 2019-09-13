@@ -46,6 +46,7 @@ enum AppAction {
     case favouritePrimes(FavouritePrimesAction)
 }
 
+/// Combine two reducers into one
 //func _combine<Value, Action>(
 //    _ first: @escaping (inout Value, Action) -> Void,
 //    _ second: @escaping (inout Value, Action) -> Void
@@ -56,6 +57,7 @@ enum AppAction {
 //        }
 //}
 
+/// Combine many reducers into one
 func combine<Value, Action>(
     _ reducers: (inout Value, Action) -> Void...
     ) -> (inout Value, Action) -> Void {
@@ -87,12 +89,10 @@ func pullback<LocalValue, GlobalValue, Action>(
     
     return { globalValue, action in
         reducer(&globalValue[keyPath: value], action)
-//        var localValue = get(globalValue)
-//        reducer(&localValue, action)
-//        set(&globalValue, localValue)
     }
 }
 
+// pass only the part of the AppState we care about (count)
 func counterReducer(state: inout Int, action: AppAction) -> Void {
     
     switch action {
@@ -124,7 +124,14 @@ func isPrimeModalReducer(state: inout AppState, action: AppAction) -> Void {
     }
 }
 
-func favouritePrimesReducer(state: inout AppState, action: AppAction) -> Void {
+struct FavouritePrimesState {
+    var favouritePrimes: [Int]
+    var activityFeed: [Activity]
+}
+
+
+// pass only the parts of the AppState we care about (favouritePrimes and activityFeed)
+func favouritePrimesReducer(state: inout FavouritePrimesState, action: AppAction) -> Void {
     
     switch action {
     case .favouritePrimes(.deleteFavouritePrime(let indexSet)):
@@ -139,13 +146,30 @@ func favouritePrimesReducer(state: inout AppState, action: AppAction) -> Void {
     }
 }
 
+extension AppState {
+    var favouritePrimesState: FavouritePrimesState {
+        get {
+            FavouritePrimesState(
+                favouritePrimes: self.favouritePrimes,
+                activityFeed: self.activityFeed
+            )
+        }
+        set {
+            self.favouritePrimes = newValue.favouritePrimes
+            self.activityFeed = newValue.activityFeed
+        }
+    }
+}
+
 //let appReducer = combine(combine(counterReducer, isPrimeModalReducer), favouritePrimesReducer)
 let appReducer = combine(
 //    pullback(counterReducer, get: { $0.count }, set: { $0.count = $1 }), //<#(GlobalValue) -> LocalValue#>) { $0.count },
     pullback(counterReducer, value: \.count),
     isPrimeModalReducer,
-    favouritePrimesReducer
+    pullback(favouritePrimesReducer, value: \.favouritePrimesState)
 )
+
+//let appReducer = pullback(_appReducer, value: \.self)
 
 
 //func appReducer(state: inout AppState,

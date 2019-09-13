@@ -10,7 +10,7 @@ import SwiftUI
 
 struct IsPrimeModalView: View {
     
-    @ObservedObject var store: Store<AppState, CounterAction>
+    @ObservedObject var store: Store<AppState, AppAction>
     
     var body: some View {
         VStack {
@@ -18,13 +18,20 @@ struct IsPrimeModalView: View {
                 Text("\(self.store.value.count) is prime :)")
 
                 if self.store.value.favouritePrimes.contains(self.store.value.count) {
-                    Button(action: removeFavouritePrimeAction) {
-                        Text("Remove from favourite primes")
+                    
+                    Button("Remove from favourite primes") {
+                        self.store.send(.favouritePrime(.addFavouritePrimeTapped))
                     }
+//                    Button(action: removeFavouritePrimeAction) {
+//                        Text("Remove from favourite primes")
+//                    }
                 } else {
-                    Button(action: addFavouritePrimeAction) {
-                          Text("Add to favourite primes")
-                      }
+                    Button("Add to favourite primes") {
+                        self.store.send(.favouritePrime(.addFavouritePrimeTapped))
+                    }
+//                    Button(action: addFavouritePrimeAction) {
+//                          Text("Add to favourite primes")
+//                      }
                 }
             } else {
                 Text("\(self.store.value.count) is not prime :(")
@@ -32,15 +39,17 @@ struct IsPrimeModalView: View {
         }
     }
     
-    func removeFavouritePrimeAction() {
-        self.store.value.favouritePrimes.removeAll(where: { $0 == self.store.value.count })
-        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(self.store.value.count)))
-//        self.store.value.removeFavouritePrime()
-    }
-    
-    func addFavouritePrimeAction() {
-        self.store.value.favouritePrimes.append(self.store.value.count)
-        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(self.store.value.count)))
-//        self.store.value.addFavouritePrime()
-    }
+//    func removeFavouritePrimeAction() {
+//        self.store.send(.favouritePrime(.removeFavouritePrimeTapped))
+////        self.store.value.favouritePrimes.removeAll(where: { $0 == self.store.value.count })
+////        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(self.store.value.count)))
+////        self.store.value.removeFavouritePrime()
+//    }
+//
+//    func addFavouritePrimeAction() {
+//        self.store.send(.favouritePrime(.addFavouritePrimeTapped))
+////        self.store.value.favouritePrimes.append(self.store.value.count)
+////        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(self.store.value.count)))
+////        self.store.value.addFavouritePrime()
+//    }
 }

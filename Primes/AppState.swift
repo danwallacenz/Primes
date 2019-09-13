@@ -21,27 +21,62 @@ final class Store<Value, Action>: ObservableObject {
         self.reducer = reducer
     }
     
-    func send(action: Action) {
+    func send(_ action: Action) {
         reducer(&value, action)
     }
 }
 
 enum CounterAction {
-  case decrTapped
-  case incrTapped
+    case decrTapped
+    case incrTapped
 }
 
-func counterReducer(state: inout AppState,
-                    action: CounterAction) {
+enum FavouritePrimesAction {
+    case addFavouritePrimeTapped
+    case removeFavouritePrimeTapped
+}
+
+enum AppAction {
+    case counter(CounterAction)
+    case favouritePrime(FavouritePrimesAction)
+    
+//    case decrTapped
+//    case incrTapped
+//    case addFavouritePrimeTapped
+//    case removeFavouritePrimeTapped
+}
+
+func appReducer(state: inout AppState,
+                    action: AppAction) {
     switch action {
-    case .decrTapped:
+    case .counter(.decrTapped):
         state.count -= 1
-    case .incrTapped:
+    case .counter(.incrTapped):
         state.count += 1
+    case .favouritePrime(.addFavouritePrimeTapped):
+        state.favouritePrimes.append(state.count)
+        state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
+
+    case .favouritePrime(.removeFavouritePrimeTapped):
+        let count = state.count // must do this for inout
+        state.favouritePrimes.removeAll(where: { $0 == count })
+        state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
+
     }
 }
 
-//let myCounterReducer = counterReducer
+//    func removeFavouritePrimeAction() {
+//        self.store.value.favouritePrimes.removeAll(where: { $0 == self.store.value.count })
+//        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(self.store.value.count)))
+////        self.store.value.removeFavouritePrime()
+//    }
+//
+//    func addFavouritePrimeAction() {
+//        self.store.value.favouritePrimes.append(self.store.value.count)
+//        self.store.value.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(self.store.value.count)))
+///       self.store.value.addFavouritePrime()
+//    }
+
 
 struct AppState {
     

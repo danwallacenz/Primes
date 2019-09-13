@@ -13,11 +13,15 @@ struct ActivityFeedView: View {
     @ObservedObject var store: Store<AppState, AppAction>
     
     var body: some View {
+        
         List { ForEach(self.store.value.activityFeed.reversed()) { activity in
+            
             Text("\(activity.description) ")
+        
         }.multilineTextAlignment(.leading)
             .lineLimit(nil)
             .padding()
+            
         }.navigationBarTitle("Activity feed")
     }
 

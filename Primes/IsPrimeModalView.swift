@@ -21,12 +21,14 @@ struct IsPrimeModalView: View {
                 if self.store.value.favouritePrimes.contains(self.store.value.count) {
                     
                     Button("Remove from favourite primes") {
+                        
                         self.store.send(.isPrimeModal(.addFavouritePrimeTapped))
                     }
 
                 } else {
                     
                     Button("Add to favourite primes") {
+                        
                         self.store.send(.isPrimeModal(.addFavouritePrimeTapped))
                     }
                 }

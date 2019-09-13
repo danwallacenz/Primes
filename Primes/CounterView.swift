@@ -25,7 +25,9 @@ struct CounterView: View {
             HStack {
                 
                 Button(action: {
+                    
                     self.store.send(.counter(.decrTapped))
+                    
                 }) {
                     Text("-")
                 }
@@ -33,7 +35,9 @@ struct CounterView: View {
                 Text("\(self.store.value.count)").foregroundColor(color)
 
                 Button(action: {
+                    
                     self.store.send(.counter(.incrTapped))
+                    
                 }) {
                      Text("+")
                 }

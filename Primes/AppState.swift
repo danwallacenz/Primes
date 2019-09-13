@@ -46,15 +46,15 @@ enum AppAction {
     case favouritePrimes(FavouritePrimesAction)
 }
 
-func _combine<Value, Action>(
-    _ first: @escaping (inout Value, Action) -> Void,
-    _ second: @escaping (inout Value, Action) -> Void
-    ) -> (inout Value, Action) -> Void {
-        return { value, action in
-            first(&value, action)
-            second(&value, action)
-        }
-}
+//func _combine<Value, Action>(
+//    _ first: @escaping (inout Value, Action) -> Void,
+//    _ second: @escaping (inout Value, Action) -> Void
+//    ) -> (inout Value, Action) -> Void {
+//        return { value, action in
+//            first(&value, action)
+//            second(&value, action)
+//        }
+//}
 
 func combine<Value, Action>(
     _ reducers: (inout Value, Action) -> Void...
@@ -67,14 +67,27 @@ func combine<Value, Action>(
     }
 }
 
-func counterReducer(state: inout AppState, action: AppAction) -> Void {
+func pullback<LocalValue, GlobalValue, Action>(
+    _ reducer: @escaping (inout LocalValue, Action) -> Void,
+    get: @escaping (GlobalValue) -> LocalValue,
+    set: @escaping (inout GlobalValue, LocalValue) -> Void
+) -> (inout GlobalValue, Action) -> Void {
+    
+    return { globalValue, action in
+        var localValue = get(globalValue)
+        reducer(&localValue, action)
+        set(&globalValue, localValue)
+    }
+}
+
+func counterReducer(state: inout Int, action: AppAction) -> Void {
     
     switch action {
     case .counter(.decrTapped):
-        state.count -= 1
+        state -= 1
     
     case .counter(.incrTapped):
-        state.count += 1
+        state += 1
     
     default:
         break
@@ -115,7 +128,7 @@ func favouritePrimesReducer(state: inout AppState, action: AppAction) -> Void {
 
 //let appReducer = combine(combine(counterReducer, isPrimeModalReducer), favouritePrimesReducer)
 let appReducer = combine(
-    counterReducer,
+    pullback(counterReducer, get: { $0.count }, set: { $0.count = $1 }), //<#(GlobalValue) -> LocalValue#>) { $0.count },
     isPrimeModalReducer,
     favouritePrimesReducer
 )

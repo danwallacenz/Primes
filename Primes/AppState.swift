@@ -163,46 +163,21 @@ func isPrimeModalReducer(state: inout AppState, action: IsPrimeModalAction) -> V
     switch action {
     case .addFavouritePrimeTapped:
         state.favouritePrimes.append(state.count)
-        state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
 
     case .removeFavouritePrimeTapped:
         let count = state.count // must do this when using inout
         state.favouritePrimes.removeAll(where: { $0 == count })
-        state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
     }
 }
-
-/// used in favouritePrimesReducer. keypath \.favouritePrimesState
-extension AppState {
-    var favouritePrimesState: FavouritePrimesState {
-        get {
-            FavouritePrimesState(
-                favouritePrimes: self.favouritePrimes,
-                activityFeed: self.activityFeed
-            )
-        }
-        set {
-            self.favouritePrimes = newValue.favouritePrimes
-            self.activityFeed = newValue.activityFeed
-        }
-    }
-}
-
-struct FavouritePrimesState {
-    var favouritePrimes: [Int]
-    var activityFeed: [Activity]
-}
-
 
 // pass only the parts of the AppState we care about (favouritePrimes and activityFeed)
-func favouritePrimesReducer(state: inout FavouritePrimesState, action: FavouritePrimesAction) -> Void {
+func favouritePrimesReducer(state: inout [Int], action: FavouritePrimesAction) -> Void {
     
     switch action {
     case .deleteFavouritePrime(let indexSet):
         for index in indexSet {
-            let prime = state.favouritePrimes[index]
-            state.favouritePrimes.removeAll(where: { $0 == prime })
-            state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
+            let prime = state[index]
+            state.removeAll(where: { $0 == prime })
         }
     }
 }
@@ -212,9 +187,50 @@ func favouritePrimesReducer(state: inout FavouritePrimesState, action: Favourite
 let _appReducer: (inout AppState, AppAction) -> Void = combine(
     pullback(counterReducer, value: \.count, action: \.counter),
     pullback(isPrimeModalReducer, value: \.self, action: \.isPrimeModal),
-    pullback(favouritePrimesReducer, value: \.favouritePrimesState, action: \.favouritePrimes)
+    pullback(favouritePrimesReducer, value: \.favouritePrimes, action: \.favouritePrimes)
 )
 let appReducer = pullback(_appReducer, value: \.self, action: \.self)
+
+// MARK: - Aspect activityFeed
+
+func activityFeed(
+    _ reducer: @escaping (inout AppState, AppAction) -> Void)
+    -> (inout AppState, AppAction) -> Void {
+        
+    return { state, action in
+        switch action {
+        case .counter:
+            break
+        
+        case let .favouritePrimes(.deleteFavouritePrime(indexSet)):
+            for index in indexSet {
+                let prime = state.favouritePrimes[index]
+                state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
+            }
+       
+        case .isPrimeModal(.addFavouritePrimeTapped):
+            state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
+       
+        case .isPrimeModal(.removeFavouritePrimeTapped):
+            state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
+        }
+        return reducer(&state, action)
+    }
+}
+
+// MARK: - Aspect logging
+
+func log<Value, Action>(
+    _ reducer: @escaping (inout Value, Action) -> Void)
+    -> (inout Value, Action) -> Void {
+        
+    return { value, action in
+        reducer(&value, action)
+        print("Action: \(action)")
+        print(value)
+        print("---")
+    }
+}
 
 // MARK:- AppState Codable
 
@@ -223,7 +239,6 @@ extension AppState: Codable {
     static func loadOrCreateAppState() -> AppState {
         if let jsonData = UserDefaults.standard.data(forKey: "APP_STATE"),
             let appState = try? JSONDecoder().decode(AppState.self, from: jsonData) {
-            print(appState)
             return appState
         } else {
             return AppState()
@@ -263,6 +278,9 @@ extension AppState: Codable {
 
 extension AppState: CustomStringConvertible {
     var description: String {
-        "count: \(count)\nfavourite primes:\(favouritePrimes)\nactivity: \(activityFeed)"
+        let activity = activityFeed.reversed().reduce("") {
+            $0 + "\($1)\n"
+        }
+        return "count: \(count)\nfavourite primes:\(favouritePrimes)\nactivity:\n\(activity)"
     }
 }

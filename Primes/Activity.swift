@@ -83,7 +83,6 @@ extension Activity.ActivityType: Codable {
           self = .removedFavoritePrime(removedFavoritePrime)
           return
         }
-        print("error \(values)")
         throw CodingError.decoding("Decoding Failed. \(dump(values))")
     }
     

@@ -37,6 +37,6 @@ struct IsPrimeModalView: View {
                 
                 Text("\(self.store.value.count) is not prime :(")
             }
-        }
+        }.font(.title)
     }
 }

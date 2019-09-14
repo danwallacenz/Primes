@@ -14,7 +14,7 @@ struct FavoritePrimesView: View {
     @ObservedObject var store: Store<AppState, AppAction>
     
     var body: some View {
-        List { ForEach(self.store.value.favouritePrimes) { favourite in
+        List { ForEach(self.store.value.favouritePrimes.reversed()) { favourite in
             
                 Text("\(favourite)")
         

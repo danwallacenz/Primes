@@ -25,5 +25,4 @@ struct ActivityFeedView: View {
             
         }.navigationBarTitle("Activity feed")
     }
-
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PrimeModal
 
 struct AppState {
     
@@ -21,6 +22,19 @@ struct AppState {
     var activityFeed: [Activity] = [] {
         didSet {
             saveState()
+        }
+    }
+}
+
+// for provide a keypath for appReducer - don't like this much
+extension AppState {
+    var primeModal: PrimeModalState {
+        get {
+            PrimeModalState.init(count: count, favouritePrimes: favouritePrimes)
+        }
+        set {
+            self.count = newValue.count
+            self.favouritePrimes = newValue.favouritePrimes
         }
     }
 }

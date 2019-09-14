@@ -33,6 +33,9 @@
 		3C3309F2232CE12600228FCC /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3309DD232CE12600228FCC /* ComposableArchitecture.framework */; };
 		3C3309F3232CE12600228FCC /* ComposableArchitecture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3309DD232CE12600228FCC /* ComposableArchitecture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C3309FB232CE16B00228FCC /* ComposableArchitecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3309FA232CE16B00228FCC /* ComposableArchitecture.swift */; };
+		3C3309FD232CE2EB00228FCC /* FavouritePrimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3309FC232CE2EB00228FCC /* FavouritePrimes.swift */; };
+		3C3309FF232CE3E600228FCC /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3309FE232CE3E600228FCC /* Counter.swift */; };
+		3C330A01232CE49D00228FCC /* PrimeModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330A00232CE49D00228FCC /* PrimeModal.swift */; };
 		3C9DAB76232B05D80020C4BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB75232B05D80020C4BC /* AppDelegate.swift */; };
 		3C9DAB78232B05D80020C4BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */; };
 		3C9DAB7A232B05D80020C4BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB79232B05D80020C4BC /* ContentView.swift */; };
@@ -182,6 +185,9 @@
 		3C3309EC232CE12600228FCC /* ComposableArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableArchitectureTests.swift; sourceTree = "<group>"; };
 		3C3309EE232CE12600228FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C3309FA232CE16B00228FCC /* ComposableArchitecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableArchitecture.swift; sourceTree = "<group>"; };
+		3C3309FC232CE2EB00228FCC /* FavouritePrimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePrimes.swift; sourceTree = "<group>"; };
+		3C3309FE232CE3E600228FCC /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		3C330A00232CE49D00228FCC /* PrimeModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeModal.swift; sourceTree = "<group>"; };
 		3C9DAB72232B05D80020C4BC /* Primes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Primes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9DAB75232B05D80020C4BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -299,6 +305,7 @@
 			children = (
 				3C330978232CE0EF00228FCC /* Counter.h */,
 				3C330979232CE0EF00228FCC /* Info.plist */,
+				3C3309FE232CE3E600228FCC /* Counter.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -317,6 +324,7 @@
 			children = (
 				3C33099B232CE10000228FCC /* PrimeModal.h */,
 				3C33099C232CE10000228FCC /* Info.plist */,
+				3C330A00232CE49D00228FCC /* PrimeModal.swift */,
 			);
 			path = PrimeModal;
 			sourceTree = "<group>";
@@ -335,6 +343,7 @@
 			children = (
 				3C3309BD232CE11400228FCC /* FavoritePrimes.h */,
 				3C3309BE232CE11400228FCC /* Info.plist */,
+				3C3309FC232CE2EB00228FCC /* FavouritePrimes.swift */,
 			);
 			path = FavoritePrimes;
 			sourceTree = "<group>";
@@ -647,6 +656,7 @@
 				TargetAttributes = {
 					3C330975232CE0EF00228FCC = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					3C33097D232CE0EF00228FCC = {
 						CreatedOnToolsVersion = 11.0;
@@ -654,6 +664,7 @@
 					};
 					3C330998232CE10000228FCC = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					3C3309A0232CE10000228FCC = {
 						CreatedOnToolsVersion = 11.0;
@@ -661,6 +672,7 @@
 					};
 					3C3309BA232CE11400228FCC = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					3C3309C2232CE11400228FCC = {
 						CreatedOnToolsVersion = 11.0;
@@ -779,6 +791,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C3309FF232CE3E600228FCC /* Counter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,6 +807,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C330A01232CE49D00228FCC /* PrimeModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +823,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C3309FD232CE2EB00228FCC /* FavouritePrimes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +952,7 @@
 		3C33098E232CE0EF00228FCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -954,6 +970,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.danwallace.Counter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -964,6 +981,7 @@
 		3C33098F232CE0EF00228FCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1031,6 +1049,7 @@
 		3C3309B1232CE10000228FCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1048,6 +1067,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.danwallace.PrimeModal;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1058,6 +1078,7 @@
 		3C3309B2232CE10000228FCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1125,6 +1146,7 @@
 		3C3309D3232CE11400228FCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1142,6 +1164,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.danwallace.FavoritePrimes;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1152,6 +1175,7 @@
 		3C3309D4232CE11400228FCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

@@ -115,10 +115,10 @@ func activityFeed(
                 state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
             }
        
-        case .isPrimeModal(.addFavouritePrimeTapped):
+        case .primeModal(.addFavouritePrimeTapped):
             state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
        
-        case .isPrimeModal(.removeFavouritePrimeTapped):
+        case .primeModal(.removeFavouritePrimeTapped):
             state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
         }
         return reducer(&state, action)

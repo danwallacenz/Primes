@@ -26,6 +26,7 @@ final class Store<Value, Action>: ObservableObject {
     }
 }
 
+/// Transform a reducer that understands local state and actions into one that understands global state and actions:
 func pullback<LocalValue, GlobalValue, GlobalAction, LocalAction>(
     _ reducer: @escaping (inout LocalValue, LocalAction) -> Void,
     value: WritableKeyPath<GlobalValue, LocalValue>,
@@ -39,6 +40,7 @@ func pullback<LocalValue, GlobalValue, GlobalAction, LocalAction>(
 }
 
 /// Combine many reducers into one
+/// Allows us to join multiple reducers together into a single mega reducer
 func combine<Value, Action>(
     _ reducers: (inout Value, Action) -> Void...
     ) -> (inout Value, Action) -> Void {

@@ -21,7 +21,7 @@ func counterReducer(state: inout Int, action: CounterAction) -> Void {
 }
 
 ///  Pass only the specific action - IsPrimeModalAction. Uses most of the AppState so we'll just pass that all in
-func isPrimeModalReducer(state: inout AppState, action: IsPrimeModalAction) -> Void {
+func primeModalReducer(state: inout AppState, action: PrimeModalAction) -> Void {
     
     switch action {
     case .addFavouritePrimeTapped:
@@ -49,7 +49,7 @@ func favouritePrimesReducer(state: inout [Int], action: FavouritePrimesAction) -
 
 let _appReducer: (inout AppState, AppAction) -> Void = combine(
     pullback(counterReducer, value: \.count, action: \.counter),
-    pullback(isPrimeModalReducer, value: \.self, action: \.isPrimeModal),
+    pullback(primeModalReducer, value: \.self, action: \.primeModal),
     pullback(favouritePrimesReducer, value: \.favouritePrimes, action: \.favouritePrimes)
 )
 let appReducer = pullback(_appReducer, value: \.self, action: \.self)

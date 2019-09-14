@@ -22,14 +22,14 @@ struct IsPrimeModalView: View {
                     
                     Button("Remove from favourite primes") {
                         
-                        self.store.send(.isPrimeModal(.addFavouritePrimeTapped))
+                        self.store.send(.primeModal(.removeFavouritePrimeTapped))
                     }
 
                 } else {
                     
                     Button("Add to favourite primes") {
                         
-                        self.store.send(.isPrimeModal(.addFavouritePrimeTapped))
+                        self.store.send(.primeModal(.addFavouritePrimeTapped))
                     }
                 }
             } else {

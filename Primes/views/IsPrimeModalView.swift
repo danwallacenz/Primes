@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct IsPrimeModalView: View {
     

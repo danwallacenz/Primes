@@ -1,0 +1,210 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SourcePresence"
+provides-nominal:
+- "11SwiftSyntax14SourcePresenceO"
+provides-member:
+- ["11SwiftSyntax14SourcePresenceO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "ByteTreeScalarDecodable"
+- "ByteTreeUserInfoKey"
+- "Codable"
+- "Int"
+- "SourcePresence"
+- "String"
+- !private "UInt8"
+- "UnsafePointer"
+- "UnsafeRawPointer"
+- !private "_findStringSwitchCase"
+- !private "fatalError"
+- !private "~="
+depends-member:
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "=="]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "RawValue"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "UInt8"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", ""]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "_Default_RawValue"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "_findStringSwitchCase"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "_rawHashValue"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "encode"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "fatalError"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "hash"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "hashValue"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "init"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "missing"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "present"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "rawValue"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "read"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "deinit"]
+- !private ["s7CVarArgP", "pointee"]
+- !private ["SL", "bindMemory"]
+- !private ["SL", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "bindMemory"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- !private ["s17CustomReflectableP", "bindMemory"]
+- !private ["s17CustomReflectableP", "pointee"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["Se", "=="]
+- ["Se", "RawValue"]
+- !private ["Se", "UInt8"]
+- ["Se", ""]
+- ["Se", "_Default_RawValue"]
+- !private ["Se", "_findStringSwitchCase"]
+- ["Se", "_rawHashValue"]
+- ["Se", "encode"]
+- !private ["Se", "fatalError"]
+- ["Se", "hash"]
+- ["Se", "hashValue"]
+- ["Se", "init"]
+- !private ["Se", "missing"]
+- !private ["Se", "present"]
+- ["Se", "rawValue"]
+- ["Se", "read"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["SE", "=="]
+- ["SE", "RawValue"]
+- !private ["SE", "UInt8"]
+- ["SE", ""]
+- ["SE", "_Default_RawValue"]
+- !private ["SE", "_findStringSwitchCase"]
+- ["SE", "_rawHashValue"]
+- ["SE", "encode"]
+- !private ["SE", "fatalError"]
+- ["SE", "hash"]
+- ["SE", "hashValue"]
+- ["SE", "init"]
+- !private ["SE", "missing"]
+- !private ["SE", "present"]
+- ["SE", "rawValue"]
+- ["SE", "read"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- !private ["SQ", "UInt8"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "bindMemory"]
+- ["SQ", "encode"]
+- !private ["SQ", "fatalError"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- !private ["SQ", "missing"]
+- !private ["SQ", "pointee"]
+- !private ["SQ", "present"]
+- ["SQ", "rawValue"]
+- ["SQ", "read"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- !private ["SH", "UInt8"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "bindMemory"]
+- ["SH", "encode"]
+- !private ["SH", "fatalError"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- !private ["SH", "missing"]
+- !private ["SH", "pointee"]
+- !private ["SH", "present"]
+- ["SH", "rawValue"]
+- ["SH", "read"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- !private ["SY", "UInt8"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "encode"]
+- !private ["SY", "fatalError"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- !private ["SY", "missing"]
+- !private ["SY", "present"]
+- ["SY", "rawValue"]
+- ["SY", "read"]
+- ["11SwiftSyntax14SourcePresenceO", "=="]
+- ["11SwiftSyntax14SourcePresenceO", "ByteTreeUserInfoKey"]
+- ["11SwiftSyntax14SourcePresenceO", "Int"]
+- ["11SwiftSyntax14SourcePresenceO", "RawValue"]
+- ["11SwiftSyntax14SourcePresenceO", "SourcePresence"]
+- !private ["11SwiftSyntax14SourcePresenceO", "UInt8"]
+- ["11SwiftSyntax14SourcePresenceO", "UnsafePointer"]
+- ["11SwiftSyntax14SourcePresenceO", "UnsafeRawPointer"]
+- ["11SwiftSyntax14SourcePresenceO", "_Default_RawValue"]
+- !private ["11SwiftSyntax14SourcePresenceO", "_findStringSwitchCase"]
+- ["11SwiftSyntax14SourcePresenceO", "_rawHashValue"]
+- ["11SwiftSyntax14SourcePresenceO", "deinit"]
+- ["11SwiftSyntax14SourcePresenceO", "encode"]
+- !private ["11SwiftSyntax14SourcePresenceO", "fatalError"]
+- ["11SwiftSyntax14SourcePresenceO", "hash"]
+- ["11SwiftSyntax14SourcePresenceO", "hashValue"]
+- ["11SwiftSyntax14SourcePresenceO", "init"]
+- ["11SwiftSyntax14SourcePresenceO", "missing"]
+- ["11SwiftSyntax14SourcePresenceO", "present"]
+- ["11SwiftSyntax14SourcePresenceO", "rawValue"]
+- ["11SwiftSyntax14SourcePresenceO", "read"]
+- !private ["Sx", "bindMemory"]
+- !private ["Sx", "pointee"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["SP", "pointee"]
+- !private ["SV", "bindMemory"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "bindMemory"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "pointee"]
+- !private ["s8_PointerP", "bindMemory"]
+- !private ["s8_PointerP", "pointee"]
+depends-nominal:
+- "11SwiftSyntax23ByteTreeScalarDecodableP"
+- "11SwiftSyntax19ByteTreeUserInfoKeyV"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- "SE"
+- "SQ"
+- "SH"
+- "SY"
+- "11SwiftSyntax14SourcePresenceO"
+- !private "Sx"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "SP"
+- !private "SV"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s8_PointerP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "acb1a2cac54e22c69894da8af38a9444"

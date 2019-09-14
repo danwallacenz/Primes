@@ -1,0 +1,227 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PrintingDiagnosticConsumer"
+provides-nominal:
+- "11SwiftSyntax26PrintingDiagnosticConsumerC"
+provides-member:
+- ["11SwiftSyntax26PrintingDiagnosticConsumerC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CustomStringConvertible"
+- "Diagnostic"
+- "DiagnosticConsumer"
+- !private "FileHandle"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "PrintingDiagnosticConsumer"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["SK", "data"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "data"]
+- !private ["s7CVarArgP", "data"]
+- !private ["s7CVarArgP", "standardError"]
+- !private ["s7CVarArgP", "write"]
+- !private ["Sl", "data"]
+- !private ["SL", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "data"]
+- !private ["s28CustomDebugStringConvertibleP", "standardError"]
+- !private ["s28CustomDebugStringConvertibleP", "write"]
+- !private ["s17CustomReflectableP", "data"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "data"]
+- !private ["s23CustomStringConvertibleP", "standardError"]
+- !private ["s23CustomStringConvertibleP", "utf8"]
+- !private ["s23CustomStringConvertibleP", "write"]
+- !private ["Se", "asDiagnostic"]
+- !private ["Se", "column"]
+- !private ["Se", "data"]
+- ["Se", "error"]
+- !private ["Se", "file"]
+- !private ["Se", "line"]
+- !private ["Se", "location"]
+- !private ["Se", "message"]
+- ["Se", "note"]
+- !private ["Se", "notes"]
+- !private ["Se", "severity"]
+- !private ["Se", "text"]
+- ["Se", "warning"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["11SwiftSyntax10DiagnosticV", "location"]
+- !private ["11SwiftSyntax10DiagnosticV", "message"]
+- !private ["11SwiftSyntax10DiagnosticV", "notes"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "FileHandle"]
+- ["11SwiftSyntax18DiagnosticConsumerP", ""]
+- ["11SwiftSyntax18DiagnosticConsumerP", "finalize"]
+- ["11SwiftSyntax18DiagnosticConsumerP", "handle"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "write"]
+- !private ["SE", "asDiagnostic"]
+- !private ["SE", "column"]
+- !private ["SE", "data"]
+- ["SE", "error"]
+- !private ["SE", "file"]
+- !private ["SE", "line"]
+- !private ["SE", "location"]
+- !private ["SE", "message"]
+- ["SE", "note"]
+- !private ["SE", "notes"]
+- !private ["SE", "severity"]
+- !private ["SE", "text"]
+- ["SE", "warning"]
+- !private ["SS10FoundationE8EncodingV", "utf8"]
+- !private ["SQ", "data"]
+- ["SQ", "error"]
+- ["SQ", "note"]
+- !private ["SQ", "standardError"]
+- !private ["SQ", "utf8"]
+- ["SQ", "warning"]
+- !private ["SQ", "write"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s32ExpressibleByStringInterpolationP", "data"]
+- !private ["s26ExpressibleByStringLiteralP", "data"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
+- !private ["So12NSFileHandleC", "standardError"]
+- !private ["So12NSFileHandleC", "write"]
+- !private ["SH", "data"]
+- ["SH", "error"]
+- ["SH", "note"]
+- !private ["SH", "standardError"]
+- !private ["SH", "utf8"]
+- ["SH", "warning"]
+- !private ["SH", "write"]
+- !private ["s25LosslessStringConvertibleP", "data"]
+- !private ["11SwiftSyntax10DiagnosticV7MessageV", "severity"]
+- !private ["11SwiftSyntax10DiagnosticV7MessageV", "text"]
+- !private ["s10MirrorPathP", "data"]
+- !private ["So8NSCodingP", "data"]
+- !private ["So8NSCodingP", "standardError"]
+- !private ["So8NSCodingP", "write"]
+- !private ["So9NSCopyingP", "data"]
+- !private ["So21NSItemProviderReadingP", "data"]
+- !private ["So21NSItemProviderWritingP", "data"]
+- !private ["So16NSMutableCopyingP", "data"]
+- !private ["So8NSObjectC", "data"]
+- !private ["So8NSObjectC", "standardError"]
+- !private ["So8NSObjectC", "write"]
+- !private ["So8NSObjectP", "data"]
+- !private ["So8NSObjectP", "standardError"]
+- !private ["So8NSObjectP", "write"]
+- !private ["So14NSSecureCodingP", "data"]
+- !private ["So14NSSecureCodingP", "standardError"]
+- !private ["So14NSSecureCodingP", "write"]
+- !private ["So8NSStringC", "data"]
+- !private ["11SwiftSyntax4NoteV", "asDiagnostic"]
+- ["11SwiftSyntax26PrintingDiagnosticConsumerC", "CustomStringConvertible"]
+- ["11SwiftSyntax26PrintingDiagnosticConsumerC", "Diagnostic"]
+- !private ["11SwiftSyntax26PrintingDiagnosticConsumerC", "FileHandle"]
+- ["11SwiftSyntax26PrintingDiagnosticConsumerC", "deinit"]
+- ["11SwiftSyntax26PrintingDiagnosticConsumerC", "finalize"]
+- ["11SwiftSyntax26PrintingDiagnosticConsumerC", "handle"]
+- ["11SwiftSyntax26PrintingDiagnosticConsumerC", "init"]
+- ["11SwiftSyntax26PrintingDiagnosticConsumerC", "write"]
+- !private ["Sm", "data"]
+- ["SY", "error"]
+- ["SY", "note"]
+- !private ["SY", "utf8"]
+- ["SY", "warning"]
+- !private ["ST", "data"]
+- ["11SwiftSyntax10DiagnosticV8SeverityO", "error"]
+- ["11SwiftSyntax10DiagnosticV8SeverityO", "note"]
+- ["11SwiftSyntax10DiagnosticV8SeverityO", "warning"]
+- !private ["11SwiftSyntax14SourceLocationV", "column"]
+- !private ["11SwiftSyntax14SourceLocationV", "file"]
+- !private ["11SwiftSyntax14SourceLocationV", "line"]
+- !private ["SS", "data"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "data"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "data"]
+- !private ["s20TextOutputStreamableP", "data"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "data"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "data"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "data"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "data"]
+- !private ["s19_HasContiguousBytesP", "data"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "standardError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "write"]
+- !private ["s21_ObjectiveCBridgeableP", "data"]
+depends-nominal:
+- !private "SK"
+- !private "11SwiftSyntax23ByteTreeScalarDecodableP"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "11SwiftSyntax10DiagnosticV"
+- "11SwiftSyntax18DiagnosticConsumerP"
+- "SE"
+- !private "SS10FoundationE8EncodingV"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So12NSFileHandleC"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "11SwiftSyntax10DiagnosticV7MessageV"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "11SwiftSyntax4NoteV"
+- "11SwiftSyntax26PrintingDiagnosticConsumerC"
+- !private "Sm"
+- "SY"
+- !private "ST"
+- "11SwiftSyntax10DiagnosticV8SeverityO"
+- !private "11SwiftSyntax14SourceLocationV"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "e67b881506acde5a5be0311dcc3cb78f"

@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "71f6f2bf7678aef95d6c63ca9da2e11e"
+build_time: [1568430346, 833006000]
+inputs:
+  "/Users/danw/dev/Primes/.build/checkouts/swift-enum-properties/Sources/EnumProperties/EnumPropertyRewriter.swift": [1568430315, 592953184]
+  "/Users/danw/dev/Primes/.build/checkouts/swift-enum-properties/Sources/EnumProperties/MakeEnumProperty.swift": [1568430315, 594161829]

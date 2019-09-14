@@ -1,0 +1,161 @@
+{
+  "": {
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/master.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/AbsolutePosition.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/AbsolutePosition.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/AbsolutePosition.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/AbsolutePosition~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/AbsolutePosition.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/ByteTreeDeserialization.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/ByteTreeDeserialization.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/ByteTreeDeserialization.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/ByteTreeDeserialization~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/ByteTreeDeserialization.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/Diagnostic.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/Diagnostic.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/Diagnostic.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/Diagnostic~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/Diagnostic.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/DiagnosticConsumer.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/DiagnosticConsumer.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/DiagnosticConsumer.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/DiagnosticConsumer~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/DiagnosticConsumer.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/DiagnosticEngine.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/DiagnosticEngine.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/DiagnosticEngine.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/DiagnosticEngine~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/DiagnosticEngine.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/JSONDiagnosticConsumer.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/JSONDiagnosticConsumer.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/JSONDiagnosticConsumer.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/JSONDiagnosticConsumer~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/JSONDiagnosticConsumer.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/LazyNonThreadSafeCache.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/LazyNonThreadSafeCache.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/LazyNonThreadSafeCache.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/LazyNonThreadSafeCache~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/LazyNonThreadSafeCache.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/PrintingDiagnosticConsumer.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/PrintingDiagnosticConsumer.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/PrintingDiagnosticConsumer.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/PrintingDiagnosticConsumer~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/PrintingDiagnosticConsumer.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/RawSyntax.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/RawSyntax.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/RawSyntax.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/RawSyntax~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/RawSyntax.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/SourceLength.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SourceLength.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SourceLength.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SourceLength~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SourceLength.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/SourcePresence.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SourcePresence.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SourcePresence.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SourcePresence~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SourcePresence.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/SwiftSyntax.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SwiftSyntax.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SwiftSyntax.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SwiftSyntax~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SwiftSyntax.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/SwiftcInvocation.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SwiftcInvocation.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SwiftcInvocation.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SwiftcInvocation~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SwiftcInvocation.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/Syntax.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/Syntax.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/Syntax.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/Syntax~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/Syntax.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/SyntaxChildren.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SyntaxChildren.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SyntaxChildren.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SyntaxChildren~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SyntaxChildren.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/SyntaxData.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SyntaxData.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SyntaxData.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SyntaxData~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/SyntaxData.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/WeakLookupTable.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/WeakLookupTable.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/WeakLookupTable.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/WeakLookupTable~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/WeakLookupTable.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/SyntaxBuilders.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxBuilders.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxBuilders.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxBuilders~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxBuilders.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/SyntaxClassifier.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxClassifier.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxClassifier.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxClassifier~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxClassifier.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/SyntaxCollections.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxCollections.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxCollections.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxCollections~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxCollections.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/SyntaxFactory.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxFactory.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxFactory.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxFactory~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxFactory.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/SyntaxKind.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxKind.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxKind.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxKind~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxKind.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/SyntaxNodes.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxNodes.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxNodes.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxNodes~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxNodes.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/SyntaxRewriter.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxRewriter.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxRewriter.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxRewriter~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/SyntaxRewriter.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/TokenKind.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/TokenKind.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/TokenKind.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/TokenKind~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/TokenKind.swiftdeps"
+  },
+  "/Users/danw/dev/Primes/.build/checkouts/swift-syntax/Sources/SwiftSyntax/gyb_generated/Trivia.swift": {
+    "dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/Trivia.d",
+    "object": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/Trivia.swift.o",
+    "swiftmodule": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/Trivia~partial.swiftmodule",
+    "swift-dependencies": "/Users/danw/dev/Primes/.build/x86_64-apple-macosx/debug/SwiftSyntax.build/gyb_generated/Trivia.swiftdeps"
+  }
+}

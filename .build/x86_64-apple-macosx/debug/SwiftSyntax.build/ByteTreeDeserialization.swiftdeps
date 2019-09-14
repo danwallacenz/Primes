@@ -1,0 +1,645 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ByteTreeUserInfoKey"
+- "ByteTreeDecodingError"
+- "ByteTreeScalarDecodable"
+- "ByteTreeObjectDecodable"
+- "ByteTreeObjectReader"
+- "ByteTreeProtocolVersion"
+- "ByteTreeReader"
+provides-nominal:
+- "11SwiftSyntax19ByteTreeUserInfoKeyV"
+- "11SwiftSyntax21ByteTreeDecodingErrorO"
+- "11SwiftSyntax23ByteTreeScalarDecodableP"
+- "11SwiftSyntax23ByteTreeObjectDecodableP"
+- "11SwiftSyntax20ByteTreeObjectReaderV"
+- "11SwiftSyntax23ByteTreeProtocolVersionV"
+- "11SwiftSyntax14ByteTreeReaderV"
+- "11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO"
+- "s5UInt8V"
+- "s6UInt16V"
+- "s6UInt32V"
+- "SS"
+- "Sq"
+- "Sa"
+provides-member:
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", ""]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", ""]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", ""]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", ""]
+- ["11SwiftSyntax20ByteTreeObjectReaderV", ""]
+- ["11SwiftSyntax23ByteTreeProtocolVersionV", ""]
+- ["11SwiftSyntax14ByteTreeReaderV", ""]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", ""]
+- ["s5UInt8V", ""]
+- ["s6UInt16V", ""]
+- ["s6UInt32V", ""]
+- ["SS", ""]
+- ["Sq", ""]
+- ["Sa", ""]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "read"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "&"
+- !private "+"
+- !private "+="
+- !private "..<"
+- !private "<"
+- !private "<<"
+- "=="
+- !private ">>"
+- "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "ByteTreeDecodingError"
+- "ByteTreeObjectDecodable"
+- "ByteTreeObjectReader"
+- "ByteTreeProtocolVersion"
+- "ByteTreeReader"
+- "ByteTreeScalarDecodable"
+- "ByteTreeUserInfoKey"
+- "CustomStringConvertible"
+- "Data"
+- "Error"
+- "FixedWidthInteger"
+- "Hashable"
+- "Int"
+- !private "MemoryLayout"
+- "Optional"
+- "String"
+- !private "StringLiteralType"
+- "UInt16"
+- "UInt32"
+- "UInt8"
+- "UnsafeMutablePointer"
+- "UnsafePointer"
+- "UnsafeRawPointer"
+- !private "assert"
+- !private "~"
+depends-member:
+- ["s18AdditiveArithmeticP", "ByteTreeUserInfoKey"]
+- ["s18AdditiveArithmeticP", "FixedWidthInteger"]
+- ["s18AdditiveArithmeticP", "Int"]
+- !private ["s18AdditiveArithmeticP", "MemoryLayout"]
+- ["s18AdditiveArithmeticP", "UnsafePointer"]
+- ["s18AdditiveArithmeticP", "UnsafeRawPointer"]
+- !private ["s18AdditiveArithmeticP", "assert"]
+- !private ["s18AdditiveArithmeticP", "init"]
+- ["s18AdditiveArithmeticP", "read"]
+- ["Sa", "Array"]
+- ["Sa", "ByteTreeObjectDecodable"]
+- ["Sa", "ByteTreeObjectReader"]
+- ["Sa", "ByteTreeUserInfoKey"]
+- ["Sa", "Int"]
+- ["Sa", "UnsafeMutablePointer"]
+- ["Sa", "UnsafePointer"]
+- ["Sa", "deinit"]
+- ["Sa", "read"]
+- !private ["SK", "Data"]
+- !private ["SK", "String"]
+- !private ["SK", "init"]
+- !private ["SK", "map"]
+- ["SK", "read"]
+- !private ["SK", "withUnsafeBytes"]
+- ["Sz", "ByteTreeUserInfoKey"]
+- ["Sz", "FixedWidthInteger"]
+- ["Sz", "Int"]
+- !private ["Sz", "MemoryLayout"]
+- ["Sz", "UnsafePointer"]
+- ["Sz", "UnsafeRawPointer"]
+- !private ["Sz", "assert"]
+- !private ["Sz", "init"]
+- ["Sz", "read"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "Int"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "String"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "_code"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "_domain"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "_getEmbeddedNSError"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "_userInfo"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "deinit"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "description"]
+- ["11SwiftSyntax21ByteTreeDecodingErrorO", "invalidEnumRawValue"]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", "ByteTreeObjectReader"]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", "ByteTreeUserInfoKey"]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", "Int"]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", "UnsafeMutablePointer"]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", "UnsafePointer"]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", ""]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", "read"]
+- ["11SwiftSyntax20ByteTreeObjectReaderV", "ByteTreeObjectDecodable"]
+- ["11SwiftSyntax20ByteTreeObjectReaderV", "ByteTreeReader"]
+- ["11SwiftSyntax20ByteTreeObjectReaderV", "ByteTreeScalarDecodable"]
+- ["11SwiftSyntax20ByteTreeObjectReaderV", "Int"]
+- ["11SwiftSyntax20ByteTreeObjectReaderV", "UnsafeMutablePointer"]
+- !private ["11SwiftSyntax20ByteTreeObjectReaderV", "advanceAndValidateIndex"]
+- !private ["11SwiftSyntax20ByteTreeObjectReaderV", "assert"]
+- ["11SwiftSyntax20ByteTreeObjectReaderV", "discardField"]
+- !private ["11SwiftSyntax20ByteTreeObjectReaderV", "finalize"]
+- !private ["11SwiftSyntax20ByteTreeObjectReaderV", "init"]
+- !private ["11SwiftSyntax20ByteTreeObjectReaderV", "nextIndex"]
+- !private ["11SwiftSyntax20ByteTreeObjectReaderV", "numFields"]
+- ["11SwiftSyntax20ByteTreeObjectReaderV", "readField"]
+- !private ["11SwiftSyntax20ByteTreeObjectReaderV", "reader"]
+- ["11SwiftSyntax23ByteTreeProtocolVersionV", "Int"]
+- ["11SwiftSyntax23ByteTreeProtocolVersionV", "init"]
+- ["11SwiftSyntax23ByteTreeProtocolVersionV", "major"]
+- ["11SwiftSyntax23ByteTreeProtocolVersionV", "minor"]
+- ["11SwiftSyntax14ByteTreeReaderV", "Bool"]
+- ["11SwiftSyntax14ByteTreeReaderV", "ByteTreeObjectDecodable"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "ByteTreeObjectReader"]
+- ["11SwiftSyntax14ByteTreeReaderV", "ByteTreeProtocolVersion"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "ByteTreeReader"]
+- ["11SwiftSyntax14ByteTreeReaderV", "ByteTreeScalarDecodable"]
+- ["11SwiftSyntax14ByteTreeReaderV", "ByteTreeUserInfoKey"]
+- ["11SwiftSyntax14ByteTreeReaderV", "CustomStringConvertible"]
+- ["11SwiftSyntax14ByteTreeReaderV", "Data"]
+- ["11SwiftSyntax14ByteTreeReaderV", "DeserializationError"]
+- ["11SwiftSyntax14ByteTreeReaderV", "Error"]
+- ["11SwiftSyntax14ByteTreeReaderV", "Int"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "MemoryLayout"]
+- ["11SwiftSyntax14ByteTreeReaderV", "String"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "UInt32"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "UInt8"]
+- ["11SwiftSyntax14ByteTreeReaderV", "UnsafePointer"]
+- ["11SwiftSyntax14ByteTreeReaderV", "UnsafeRawPointer"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "assert"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "discardField"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "init"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "pointer"]
+- ["11SwiftSyntax14ByteTreeReaderV", "read"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "readAndValidateProtocolVersion"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "readFieldLength"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "readObjectLength"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "readRaw"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "readScalarLength"]
+- !private ["11SwiftSyntax14ByteTreeReaderV", "userInfo"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "ByteTreeUserInfoKey"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "Data"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "FixedWidthInteger"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "Int"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "MemoryLayout"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "String"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "UnsafePointer"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "UnsafeRawPointer"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", ""]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "assert"]
+- !private ["11SwiftSyntax23ByteTreeScalarDecodableP", "init"]
+- ["11SwiftSyntax23ByteTreeScalarDecodableP", "read"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "=="]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "String"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "__derived_struct_equals"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "_rawHashValue"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "deinit"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "hash"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "hashValue"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "init"]
+- ["11SwiftSyntax19ByteTreeUserInfoKeyV", "rawValue"]
+- !private ["s7CVarArgP", "Data"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "pointee"]
+- ["s7CVarArgP", "read"]
+- !private ["Sl", "Data"]
+- !private ["Sl", "String"]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
+- ["Sl", "read"]
+- !private ["Sl", "withUnsafeBytes"]
+- ["SL", "ByteTreeUserInfoKey"]
+- !private ["SL", "Data"]
+- ["SL", "FixedWidthInteger"]
+- ["SL", "Int"]
+- !private ["SL", "MemoryLayout"]
+- !private ["SL", "String"]
+- ["SL", "UnsafePointer"]
+- ["SL", "UnsafeRawPointer"]
+- !private ["SL", "advanced"]
+- !private ["SL", "assert"]
+- !private ["SL", "bindMemory"]
+- !private ["SL", "init"]
+- !private ["SL", "pointee"]
+- ["SL", "read"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- ["10Foundation15ContiguousBytesP", "read"]
+- !private ["10Foundation15ContiguousBytesP", "withUnsafeBytes"]
+- !private ["s28CustomDebugStringConvertibleP", "Data"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "advanced"]
+- !private ["s28CustomDebugStringConvertibleP", "bindMemory"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- ["s28CustomDebugStringConvertibleP", "read"]
+- !private ["s28CustomDebugStringConvertibleP", "withUnsafeBytes"]
+- !private ["s17CustomReflectableP", "Data"]
+- !private ["s17CustomReflectableP", "String"]
+- !private ["s17CustomReflectableP", "advanced"]
+- !private ["s17CustomReflectableP", "bindMemory"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "pointee"]
+- ["s17CustomReflectableP", "read"]
+- !private ["s17CustomReflectableP", "withUnsafeBytes"]
+- ["s23CustomStringConvertibleP", "ByteTreeUserInfoKey"]
+- !private ["s23CustomStringConvertibleP", "Data"]
+- ["s23CustomStringConvertibleP", "FixedWidthInteger"]
+- ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "MemoryLayout"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", "UnsafePointer"]
+- ["s23CustomStringConvertibleP", "UnsafeRawPointer"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_code"]
+- ["s23CustomStringConvertibleP", "_domain"]
+- ["s23CustomStringConvertibleP", "_getEmbeddedNSError"]
+- ["s23CustomStringConvertibleP", "_userInfo"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "assert"]
+- ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "invalidEnumRawValue"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- ["s23CustomStringConvertibleP", "read"]
+- !private ["s23CustomStringConvertibleP", "utf8"]
+- ["s23CustomStringConvertibleP", "versionValidationFailed"]
+- !private ["s23CustomStringConvertibleP", "withUnsafeBytes"]
+- !private ["10Foundation4DataV", "init"]
+- !private ["10Foundation4DataV", "withUnsafeBytes"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- ["10Foundation12DataProtocolP", "read"]
+- !private ["10Foundation12DataProtocolP", "withUnsafeBytes"]
+- !private ["Se", "Data"]
+- !private ["Se", "String"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- ["Se", "read"]
+- !private ["Se", "withUnsafeBytes"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "ByteTreeProtocolVersion"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "String"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "_code"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "_domain"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "_getEmbeddedNSError"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "_userInfo"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "deinit"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "description"]
+- ["11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO", "versionValidationFailed"]
+- !private ["SE", "Data"]
+- !private ["SE", "String"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- ["SE", "read"]
+- !private ["SE", "withUnsafeBytes"]
+- !private ["SS10FoundationE8EncodingV", "utf8"]
+- ["SQ", "=="]
+- ["SQ", "ByteTreeUserInfoKey"]
+- !private ["SQ", "Data"]
+- ["SQ", "FixedWidthInteger"]
+- ["SQ", "Int"]
+- !private ["SQ", "MemoryLayout"]
+- !private ["SQ", "String"]
+- ["SQ", "UnsafePointer"]
+- ["SQ", "UnsafeRawPointer"]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "advanced"]
+- !private ["SQ", "assert"]
+- !private ["SQ", "bindMemory"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["SQ", "pointee"]
+- !private ["SQ", "rawValue"]
+- ["SQ", "read"]
+- !private ["SQ", "utf8"]
+- !private ["SQ", "withUnsafeBytes"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "description"]
+- ["s5ErrorP", "invalidEnumRawValue"]
+- ["s5ErrorP", "versionValidationFailed"]
+- ["s25ExpressibleByArrayLiteralP", "read"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Data"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "String"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "read"]
+- ["s27ExpressibleByIntegerLiteralP", "ByteTreeUserInfoKey"]
+- ["s27ExpressibleByIntegerLiteralP", "FixedWidthInteger"]
+- ["s27ExpressibleByIntegerLiteralP", "Int"]
+- !private ["s27ExpressibleByIntegerLiteralP", "MemoryLayout"]
+- ["s27ExpressibleByIntegerLiteralP", "UnsafePointer"]
+- ["s27ExpressibleByIntegerLiteralP", "UnsafeRawPointer"]
+- !private ["s27ExpressibleByIntegerLiteralP", "assert"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["s27ExpressibleByIntegerLiteralP", "read"]
+- ["s23ExpressibleByNilLiteralP", "read"]
+- !private ["s32ExpressibleByStringInterpolationP", "Data"]
+- !private ["s32ExpressibleByStringInterpolationP", "String"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- ["s32ExpressibleByStringInterpolationP", "read"]
+- !private ["s26ExpressibleByStringLiteralP", "Data"]
+- !private ["s26ExpressibleByStringLiteralP", "String"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "read"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Data"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "String"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "read"]
+- ["s17FixedWidthIntegerP", "ByteTreeUserInfoKey"]
+- ["s17FixedWidthIntegerP", "FixedWidthInteger"]
+- ["s17FixedWidthIntegerP", "Int"]
+- !private ["s17FixedWidthIntegerP", "MemoryLayout"]
+- ["s17FixedWidthIntegerP", "UnsafePointer"]
+- ["s17FixedWidthIntegerP", "UnsafeRawPointer"]
+- !private ["s17FixedWidthIntegerP", "assert"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- ["s17FixedWidthIntegerP", "read"]
+- ["SH", "=="]
+- ["SH", "ByteTreeUserInfoKey"]
+- !private ["SH", "Data"]
+- ["SH", "FixedWidthInteger"]
+- ["SH", "Int"]
+- !private ["SH", "MemoryLayout"]
+- !private ["SH", "String"]
+- ["SH", "UnsafePointer"]
+- ["SH", "UnsafeRawPointer"]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "advanced"]
+- !private ["SH", "assert"]
+- !private ["SH", "bindMemory"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "pointee"]
+- !private ["SH", "rawValue"]
+- ["SH", "read"]
+- !private ["SH", "utf8"]
+- !private ["SH", "withUnsafeBytes"]
+- !private ["s6HasherV", "combine"]
+- !private ["Si", "init"]
+- ["s25LosslessStringConvertibleP", "ByteTreeUserInfoKey"]
+- !private ["s25LosslessStringConvertibleP", "Data"]
+- ["s25LosslessStringConvertibleP", "FixedWidthInteger"]
+- ["s25LosslessStringConvertibleP", "Int"]
+- !private ["s25LosslessStringConvertibleP", "MemoryLayout"]
+- !private ["s25LosslessStringConvertibleP", "String"]
+- ["s25LosslessStringConvertibleP", "UnsafePointer"]
+- ["s25LosslessStringConvertibleP", "UnsafeRawPointer"]
+- !private ["s25LosslessStringConvertibleP", "assert"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "read"]
+- !private ["s12MemoryLayoutO", "size"]
+- !private ["s10MirrorPathP", "Data"]
+- !private ["s10MirrorPathP", "String"]
+- !private ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "read"]
+- !private ["SM", "init"]
+- ["SM", "read"]
+- !private ["SM", "withUnsafeBytes"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- ["10Foundation19MutableDataProtocolP", "read"]
+- !private ["10Foundation19MutableDataProtocolP", "withUnsafeBytes"]
+- ["Sj", "ByteTreeUserInfoKey"]
+- ["Sj", "FixedWidthInteger"]
+- ["Sj", "Int"]
+- !private ["Sj", "MemoryLayout"]
+- ["Sj", "UnsafePointer"]
+- ["Sj", "UnsafeRawPointer"]
+- !private ["Sj", "assert"]
+- !private ["Sj", "init"]
+- ["Sj", "read"]
+- ["Sq", "ByteTreeObjectDecodable"]
+- ["Sq", "ByteTreeObjectReader"]
+- ["Sq", "ByteTreeUserInfoKey"]
+- ["Sq", "Int"]
+- ["Sq", "Optional"]
+- ["Sq", "UnsafeMutablePointer"]
+- ["Sq", "UnsafePointer"]
+- ["Sq", "deinit"]
+- ["Sq", "read"]
+- !private ["Sk", "init"]
+- !private ["Sk", "map"]
+- ["Sk", "read"]
+- !private ["Sk", "withUnsafeBytes"]
+- !private ["Sn", "map"]
+- !private ["SX", "map"]
+- !private ["Sm", "Data"]
+- !private ["Sm", "String"]
+- !private ["Sm", "init"]
+- ["Sm", "read"]
+- !private ["Sm", "withUnsafeBytes"]
+- !private ["SY", "utf8"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "withUnsafeBytes"]
+- !private ["s10SIMDScalarP", "init"]
+- ["s10SIMDScalarP", "read"]
+- !private ["ST", "Data"]
+- !private ["ST", "String"]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
+- ["ST", "read"]
+- !private ["ST", "withUnsafeBytes"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- ["Sx", "ByteTreeUserInfoKey"]
+- ["Sx", "FixedWidthInteger"]
+- ["Sx", "Int"]
+- !private ["Sx", "MemoryLayout"]
+- ["Sx", "UnsafePointer"]
+- ["Sx", "UnsafeRawPointer"]
+- !private ["Sx", "advanced"]
+- !private ["Sx", "assert"]
+- !private ["Sx", "bindMemory"]
+- !private ["Sx", "init"]
+- !private ["Sx", "pointee"]
+- ["Sx", "read"]
+- ["SS", "ByteTreeUserInfoKey"]
+- !private ["SS", "Data"]
+- ["SS", "Int"]
+- ["SS", "String"]
+- ["SS", "UnsafePointer"]
+- ["SS", "UnsafeRawPointer"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- ["SS", "read"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "Data"]
+- !private ["Sy", "String"]
+- !private ["Sy", "init"]
+- ["Sy", "read"]
+- !private ["s16TextOutputStreamP", "Data"]
+- !private ["s16TextOutputStreamP", "String"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "read"]
+- !private ["s20TextOutputStreamableP", "Data"]
+- !private ["s20TextOutputStreamableP", "String"]
+- !private ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "read"]
+- ["s6UInt16V", "deinit"]
+- ["s6UInt16V", "read"]
+- ["s6UInt32V", "deinit"]
+- !private ["s6UInt32V", "init"]
+- ["s6UInt32V", "read"]
+- ["s5UInt8V", "deinit"]
+- ["s5UInt8V", "read"]
+- !private ["Sp", "pointee"]
+- !private ["SP", "pointee"]
+- !private ["SV", "advanced"]
+- !private ["SV", "bindMemory"]
+- !private ["SV", "init"]
+- !private ["SU", "init"]
+- ["SU", "read"]
+- ["s14_ArrayProtocolP", "read"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "Data"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "String"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "advanced"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "bindMemory"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "pointee"]
+- ["s30_CustomPlaygroundQuickLookableP", "read"]
+- ["s24_DestructorSafeContainerP", "read"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "Data"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "String"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "read"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "read"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "Data"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "String"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "read"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "Data"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "String"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "read"]
+- !private ["s19_HasContiguousBytesP", "Data"]
+- !private ["s19_HasContiguousBytesP", "String"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- ["s19_HasContiguousBytesP", "read"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "read"]
+- !private ["s21_ObjectiveCBridgeableP", "Data"]
+- !private ["s21_ObjectiveCBridgeableP", "String"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "read"]
+- !private ["s21_ObjectiveCBridgeableP", "withUnsafeBytes"]
+- !private ["s8_PointerP", "advanced"]
+- !private ["s8_PointerP", "bindMemory"]
+- !private ["s8_PointerP", "init"]
+- !private ["s8_PointerP", "pointee"]
+- ["s14_StringElementP", "read"]
+depends-nominal:
+- "s18AdditiveArithmeticP"
+- "Sa"
+- "SK"
+- "Sz"
+- "11SwiftSyntax21ByteTreeDecodingErrorO"
+- "11SwiftSyntax23ByteTreeObjectDecodableP"
+- "11SwiftSyntax20ByteTreeObjectReaderV"
+- "11SwiftSyntax23ByteTreeProtocolVersionV"
+- "11SwiftSyntax14ByteTreeReaderV"
+- "11SwiftSyntax23ByteTreeScalarDecodableP"
+- "11SwiftSyntax19ByteTreeUserInfoKeyV"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation4DataV"
+- "10Foundation12DataProtocolP"
+- "Se"
+- !private "s26DefaultStringInterpolationV"
+- "11SwiftSyntax14ByteTreeReaderV20DeserializationErrorO"
+- "SE"
+- !private "SS10FoundationE8EncodingV"
+- "SQ"
+- "s5ErrorP"
+- "s25ExpressibleByArrayLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s27ExpressibleByIntegerLiteralP"
+- "s23ExpressibleByNilLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "s17FixedWidthIntegerP"
+- "SH"
+- !private "s6HasherV"
+- !private "Si"
+- "s25LosslessStringConvertibleP"
+- !private "s12MemoryLayoutO"
+- "s10MirrorPathP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- "Sj"
+- "Sq"
+- "Sk"
+- !private "Sn"
+- !private "SX"
+- "Sm"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- "s10SIMDScalarP"
+- "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- "Sx"
+- "SS"
+- !private "s27StringInterpolationProtocolP"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s6UInt16V"
+- "s6UInt32V"
+- "s5UInt8V"
+- !private "Sp"
+- !private "SP"
+- !private "SV"
+- "SU"
+- "s14_ArrayProtocolP"
+- "s30_CustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- "s14_StringElementP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ca3bc87404c1403c70a8f3697304c338"

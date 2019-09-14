@@ -1,0 +1,268 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "JSONDiagnosticConsumer"
+provides-nominal:
+- "11SwiftSyntax22JSONDiagnosticConsumerC"
+provides-member:
+- ["11SwiftSyntax22JSONDiagnosticConsumerC", ""]
+- ["11SwiftSyntax10DiagnosticV7MessageV", ""]
+- ["11SwiftSyntax10DiagnosticV7MessageV", "couldNotOutputJSON"]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Diagnostic"
+- "DiagnosticConsumer"
+- !private "DiagnosticEngine"
+- !private "FileHandle"
+- !private "FileManager"
+- "JSONDiagnosticConsumer"
+- !private "JSONEncoder"
+- !private "PrintingDiagnosticConsumer"
+- "URL"
+depends-member:
+- !private ["Sa", "append"]
+- ["Sa", "init"]
+- !private ["SK", "append"]
+- ["SK", "init"]
+- !private ["11SwiftSyntax23ByteTreeObjectDecodableP", "append"]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", "init"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "createFile"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "fileExists"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "removeItem"]
+- !private ["s7CVarArgP", "standardOutput"]
+- !private ["s7CVarArgP", "write"]
+- !private ["Sl", "append"]
+- ["Sl", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "createFile"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "fileExists"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
+- !private ["s28CustomDebugStringConvertibleP", "removeItem"]
+- !private ["s28CustomDebugStringConvertibleP", "standardOutput"]
+- !private ["s28CustomDebugStringConvertibleP", "write"]
+- !private ["s17CustomReflectableP", "append"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "createFile"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "fileExists"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "path"]
+- !private ["s23CustomStringConvertibleP", "removeItem"]
+- !private ["s23CustomStringConvertibleP", "standardOutput"]
+- !private ["s23CustomStringConvertibleP", "write"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- ["10Foundation12DataProtocolP", "init"]
+- ["Se", "Diagnostic"]
+- ["Se", "Message"]
+- !private ["Se", "append"]
+- !private ["Se", "couldNotOutputJSON"]
+- ["Se", "error"]
+- ["Se", "init"]
+- !private ["Se", "path"]
+- ["11SwiftSyntax10DiagnosticV", "Message"]
+- !private ["11SwiftSyntax10DiagnosticV", "deinit"]
+- ["11SwiftSyntax18DiagnosticConsumerP", "Diagnostic"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "DiagnosticEngine"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "FileHandle"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "FileManager"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "JSONEncoder"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "PrintingDiagnosticConsumer"]
+- ["11SwiftSyntax18DiagnosticConsumerP", ""]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "diagnostics"]
+- ["11SwiftSyntax18DiagnosticConsumerP", "finalize"]
+- ["11SwiftSyntax18DiagnosticConsumerP", "handle"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "init"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "outputFormat"]
+- !private ["11SwiftSyntax16DiagnosticEngineC", "addConsumer"]
+- !private ["11SwiftSyntax16DiagnosticEngineC", "diagnose"]
+- !private ["11SwiftSyntax16DiagnosticEngineC", "init"]
+- ["SE", "Diagnostic"]
+- ["SE", "Message"]
+- !private ["SE", "append"]
+- !private ["SE", "couldNotOutputJSON"]
+- ["SE", "error"]
+- ["SE", "init"]
+- !private ["SE", "path"]
+- !private ["SQ", "append"]
+- !private ["SQ", "createFile"]
+- !private ["SQ", "default"]
+- ["SQ", "error"]
+- !private ["SQ", "fileExists"]
+- ["SQ", "init"]
+- !private ["SQ", "path"]
+- !private ["SQ", "prettyPrinted"]
+- !private ["SQ", "removeItem"]
+- !private ["SQ", "standardOutput"]
+- !private ["SQ", "write"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "prettyPrinted"]
+- !private ["So12NSFileHandleC", "standardOutput"]
+- !private ["So12NSFileHandleC", "write"]
+- !private ["So13NSFileManagerC", "createFile"]
+- !private ["So13NSFileManagerC", "default"]
+- !private ["So13NSFileManagerC", "fileExists"]
+- !private ["So13NSFileManagerC", "removeItem"]
+- !private ["SH", "append"]
+- !private ["SH", "createFile"]
+- !private ["SH", "default"]
+- ["SH", "error"]
+- !private ["SH", "fileExists"]
+- ["SH", "init"]
+- !private ["SH", "path"]
+- !private ["SH", "removeItem"]
+- !private ["SH", "standardOutput"]
+- !private ["SH", "write"]
+- ["11SwiftSyntax22JSONDiagnosticConsumerC", "Diagnostic"]
+- !private ["11SwiftSyntax22JSONDiagnosticConsumerC", "DiagnosticEngine"]
+- !private ["11SwiftSyntax22JSONDiagnosticConsumerC", "FileHandle"]
+- !private ["11SwiftSyntax22JSONDiagnosticConsumerC", "FileManager"]
+- !private ["11SwiftSyntax22JSONDiagnosticConsumerC", "JSONEncoder"]
+- ["11SwiftSyntax22JSONDiagnosticConsumerC", "OutputFormat"]
+- !private ["11SwiftSyntax22JSONDiagnosticConsumerC", "PrintingDiagnosticConsumer"]
+- ["11SwiftSyntax22JSONDiagnosticConsumerC", "URL"]
+- ["11SwiftSyntax22JSONDiagnosticConsumerC", "deinit"]
+- !private ["11SwiftSyntax22JSONDiagnosticConsumerC", "diagnostics"]
+- ["11SwiftSyntax22JSONDiagnosticConsumerC", "finalize"]
+- ["11SwiftSyntax22JSONDiagnosticConsumerC", "handle"]
+- ["11SwiftSyntax22JSONDiagnosticConsumerC", "init"]
+- !private ["11SwiftSyntax22JSONDiagnosticConsumerC", "outputFormat"]
+- !private ["10Foundation11JSONEncoderC", "encode"]
+- !private ["10Foundation11JSONEncoderC", "init"]
+- !private ["10Foundation11JSONEncoderC", "outputFormatting"]
+- ["11SwiftSyntax10DiagnosticV7MessageV", "Diagnostic"]
+- ["11SwiftSyntax10DiagnosticV7MessageV", "couldNotOutputJSON"]
+- ["11SwiftSyntax10DiagnosticV7MessageV", "deinit"]
+- ["11SwiftSyntax10DiagnosticV7MessageV", "init"]
+- !private ["SM", "append"]
+- ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["So8NSCodingP", "standardOutput"]
+- !private ["So8NSCodingP", "write"]
+- !private ["So8NSObjectC", "createFile"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "fileExists"]
+- !private ["So8NSObjectC", "removeItem"]
+- !private ["So8NSObjectC", "standardOutput"]
+- !private ["So8NSObjectC", "write"]
+- !private ["So8NSObjectP", "createFile"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "fileExists"]
+- !private ["So8NSObjectP", "removeItem"]
+- !private ["So8NSObjectP", "standardOutput"]
+- !private ["So8NSObjectP", "write"]
+- !private ["So14NSSecureCodingP", "standardOutput"]
+- !private ["So14NSSecureCodingP", "write"]
+- !private ["s9OptionSetP", "prettyPrinted"]
+- !private ["10Foundation11JSONEncoderC16OutputFormattingV", "prettyPrinted"]
+- !private ["11SwiftSyntax26PrintingDiagnosticConsumerC", "deinit"]
+- !private ["11SwiftSyntax26PrintingDiagnosticConsumerC", "init"]
+- !private ["Sk", "append"]
+- ["Sk", "init"]
+- !private ["Sm", "append"]
+- ["Sm", "init"]
+- ["SY", "error"]
+- !private ["SY", "prettyPrinted"]
+- !private ["10Foundation20ReferenceConvertibleP", "path"]
+- !private ["ST", "append"]
+- ["ST", "init"]
+- !private ["s10SetAlgebraP", "prettyPrinted"]
+- ["11SwiftSyntax10DiagnosticV8SeverityO", "error"]
+- !private ["10Foundation3URLV", "path"]
+- !private ["s14_ArrayProtocolP", "append"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "path"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "path"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createFile"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fileExists"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "standardOutput"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "write"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "path"]
+depends-nominal:
+- "Sa"
+- "SK"
+- "11SwiftSyntax23ByteTreeObjectDecodableP"
+- "s7CVarArgP"
+- "Sl"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "11SwiftSyntax10DiagnosticV"
+- "11SwiftSyntax18DiagnosticConsumerP"
+- !private "11SwiftSyntax16DiagnosticEngineC"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- !private "So12NSFileHandleC"
+- !private "So13NSFileManagerC"
+- "SH"
+- "11SwiftSyntax22JSONDiagnosticConsumerC"
+- !private "10Foundation11JSONEncoderC"
+- "11SwiftSyntax10DiagnosticV7MessageV"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
+- !private "10Foundation11JSONEncoderC16OutputFormattingV"
+- !private "11SwiftSyntax26PrintingDiagnosticConsumerC"
+- "Sk"
+- "Sm"
+- "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- "ST"
+- !private "s10SetAlgebraP"
+- "11SwiftSyntax10DiagnosticV8SeverityO"
+- !private "10Foundation3URLV"
+- "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "3f5a52ae05aeea955e60f5d84766dee0"

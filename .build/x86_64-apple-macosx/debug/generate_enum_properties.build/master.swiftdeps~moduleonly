@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "f9160cded4c7f2cd42135c1677d72634"
+build_time: [1568430351, 600299000]
+inputs:
+  "/Users/danw/dev/Primes/.build/checkouts/swift-enum-properties/Sources/generate-enum-properties/main.swift": [1568430315, 598067136]

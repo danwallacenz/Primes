@@ -1,0 +1,179 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DiagnosticEngine"
+provides-nominal:
+- "11SwiftSyntax16DiagnosticEngineC"
+provides-member:
+- ["11SwiftSyntax16DiagnosticEngineC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "=="
+- "Bool"
+- "Diagnostic"
+- "DiagnosticConsumer"
+- "DiagnosticEngine"
+- "SourceLocation"
+- "Void"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "contains"]
+- ["Sa", "init"]
+- !private ["SK", "append"]
+- !private ["SK", "contains"]
+- ["SK", "init"]
+- !private ["11SwiftSyntax23ByteTreeObjectDecodableP", "append"]
+- !private ["11SwiftSyntax23ByteTreeObjectDecodableP", "contains"]
+- ["11SwiftSyntax23ByteTreeObjectDecodableP", "init"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "contains"]
+- ["s7CVarArgP", "init"]
+- !private ["Sl", "append"]
+- !private ["Sl", "contains"]
+- ["Sl", "init"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "contains"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "contains"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "contains"]
+- ["10Foundation12DataProtocolP", "init"]
+- ["Se", "Builder"]
+- ["Se", "Message"]
+- !private ["Se", "append"]
+- !private ["Se", "contains"]
+- !private ["Se", "error"]
+- ["Se", "init"]
+- !private ["Se", "message"]
+- !private ["Se", "severity"]
+- ["11SwiftSyntax10DiagnosticV", "Builder"]
+- ["11SwiftSyntax10DiagnosticV", "Message"]
+- !private ["11SwiftSyntax10DiagnosticV", "deinit"]
+- !private ["11SwiftSyntax10DiagnosticV", "init"]
+- !private ["11SwiftSyntax10DiagnosticV", "message"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "finalize"]
+- !private ["11SwiftSyntax18DiagnosticConsumerP", "handle"]
+- ["11SwiftSyntax16DiagnosticEngineC", "Bool"]
+- ["11SwiftSyntax16DiagnosticEngineC", "Diagnostic"]
+- ["11SwiftSyntax16DiagnosticEngineC", "DiagnosticConsumer"]
+- ["11SwiftSyntax16DiagnosticEngineC", "SourceLocation"]
+- ["11SwiftSyntax16DiagnosticEngineC", "Void"]
+- ["11SwiftSyntax16DiagnosticEngineC", "addConsumer"]
+- ["11SwiftSyntax16DiagnosticEngineC", "consumers"]
+- ["11SwiftSyntax16DiagnosticEngineC", "deinit"]
+- ["11SwiftSyntax16DiagnosticEngineC", "diagnose"]
+- ["11SwiftSyntax16DiagnosticEngineC", "diagnostics"]
+- ["11SwiftSyntax16DiagnosticEngineC", "hasErrors"]
+- ["11SwiftSyntax16DiagnosticEngineC", "init"]
+- ["SE", "Builder"]
+- ["SE", "Message"]
+- !private ["SE", "append"]
+- !private ["SE", "contains"]
+- !private ["SE", "error"]
+- ["SE", "init"]
+- !private ["SE", "message"]
+- !private ["SE", "severity"]
+- !private ["SQ", "append"]
+- !private ["SQ", "contains"]
+- !private ["SQ", "error"]
+- ["SQ", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["SH", "append"]
+- !private ["SH", "contains"]
+- !private ["SH", "error"]
+- ["SH", "init"]
+- !private ["11SwiftSyntax10DiagnosticV7MessageV", "severity"]
+- !private ["SM", "append"]
+- !private ["SM", "contains"]
+- ["SM", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "contains"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "contains"]
+- ["Sk", "init"]
+- !private ["Sm", "append"]
+- !private ["Sm", "contains"]
+- ["Sm", "init"]
+- !private ["SY", "error"]
+- !private ["ST", "append"]
+- !private ["ST", "contains"]
+- ["ST", "init"]
+- !private ["11SwiftSyntax10DiagnosticV8SeverityO", "deinit"]
+- !private ["11SwiftSyntax10DiagnosticV8SeverityO", "error"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "contains"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "contains"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "contains"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- "Sa"
+- "SK"
+- "11SwiftSyntax23ByteTreeObjectDecodableP"
+- "s7CVarArgP"
+- "Sl"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "11SwiftSyntax10DiagnosticV"
+- !private "11SwiftSyntax18DiagnosticConsumerP"
+- "11SwiftSyntax16DiagnosticEngineC"
+- "SE"
+- "SQ"
+- "s25ExpressibleByArrayLiteralP"
+- "SH"
+- !private "11SwiftSyntax10DiagnosticV7MessageV"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- "Sk"
+- "Sm"
+- !private "SY"
+- "ST"
+- !private "11SwiftSyntax10DiagnosticV8SeverityO"
+- "s14_ArrayProtocolP"
+- "s24_DestructorSafeContainerP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "81c53036a34da7ec349f5964f55e0021"

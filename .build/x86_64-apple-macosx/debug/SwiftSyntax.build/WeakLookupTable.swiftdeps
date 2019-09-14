@@ -1,0 +1,300 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Identifiable"
+- "WeakLookupTable"
+provides-nominal:
+- "11SwiftSyntax12IdentifiableP"
+- "11SwiftSyntax15WeakLookupTableC"
+provides-member:
+- ["11SwiftSyntax12IdentifiableP", ""]
+- ["11SwiftSyntax15WeakLookupTableC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "&"
+- !private "&*="
+- !private "&+"
+- !private "&+="
+- !private "&-"
+- !private "+"
+- !private "-"
+- !private "..<"
+- !private "/"
+- !private "<"
+- !private "<="
+- !private "=="
+- !private ">="
+- !private ">>"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- "Double"
+- "ExpressibleByNilLiteral"
+- "Hashable"
+- "Identifiable"
+- "Int"
+- !private "StringLiteralType"
+- "UnsafeMutablePointer"
+- "WeakLookupTable"
+- "WeakReference"
+- !private "precondition"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["s18AdditiveArithmeticP", "max"]
+- !private ["s18AdditiveArithmeticP", "rounded"]
+- !private ["SB", "init"]
+- !private ["SB", "rounded"]
+- !private ["Sz", "init"]
+- !private ["Sz", "max"]
+- !private ["s7CVarArgP", "advanced"]
+- !private ["s7CVarArgP", "allocate"]
+- !private ["s7CVarArgP", "deallocate"]
+- !private ["s7CVarArgP", "deinitialize"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "initialize"]
+- !private ["s7CVarArgP", "max"]
+- !private ["s7CVarArgP", "moveAssign"]
+- !private ["s7CVarArgP", "pointee"]
+- !private ["s7CVarArgP", "rounded"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["SL", "advanced"]
+- !private ["SL", "allocate"]
+- !private ["SL", "deallocate"]
+- !private ["SL", "deinitialize"]
+- !private ["SL", "init"]
+- !private ["SL", "initialize"]
+- !private ["SL", "max"]
+- !private ["SL", "moveAssign"]
+- !private ["SL", "pointee"]
+- !private ["SL", "rounded"]
+- !private ["SL", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "advanced"]
+- !private ["s28CustomDebugStringConvertibleP", "allocate"]
+- !private ["s28CustomDebugStringConvertibleP", "deallocate"]
+- !private ["s28CustomDebugStringConvertibleP", "deinitialize"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initialize"]
+- !private ["s28CustomDebugStringConvertibleP", "moveAssign"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "rounded"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "advanced"]
+- !private ["s17CustomReflectableP", "allocate"]
+- !private ["s17CustomReflectableP", "deallocate"]
+- !private ["s17CustomReflectableP", "deinitialize"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "initialize"]
+- !private ["s17CustomReflectableP", "max"]
+- !private ["s17CustomReflectableP", "moveAssign"]
+- !private ["s17CustomReflectableP", "pointee"]
+- !private ["s17CustomReflectableP", "rounded"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "max"]
+- !private ["s23CustomStringConvertibleP", "rounded"]
+- !private ["Se", "init"]
+- !private ["Se", "max"]
+- !private ["Se", "rounded"]
+- !private ["Sd", "init"]
+- !private ["Sd", "rounded"]
+- !private ["SE", "init"]
+- !private ["SE", "max"]
+- !private ["SE", "rounded"]
+- !private ["SQ", "advanced"]
+- !private ["SQ", "allocate"]
+- !private ["SQ", "deallocate"]
+- !private ["SQ", "deinitialize"]
+- !private ["SQ", "hashValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "initialize"]
+- !private ["SQ", "max"]
+- !private ["SQ", "moveAssign"]
+- !private ["SQ", "pointee"]
+- !private ["SQ", "rounded"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "up"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "rounded"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "max"]
+- !private ["s27ExpressibleByIntegerLiteralP", "rounded"]
+- !private ["s23ExpressibleByNilLiteralP", ""]
+- ["s23ExpressibleByNilLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "value"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s17FixedWidthIntegerP", "max"]
+- !private ["SF", "init"]
+- !private ["SF", "rounded"]
+- !private ["s25FloatingPointRoundingRuleO", "up"]
+- !private ["SH", "advanced"]
+- !private ["SH", "allocate"]
+- !private ["SH", "deallocate"]
+- !private ["SH", "deinitialize"]
+- !private ["SH", "hashValue"]
+- !private ["SH", "init"]
+- !private ["SH", "initialize"]
+- !private ["SH", "max"]
+- !private ["SH", "moveAssign"]
+- !private ["SH", "pointee"]
+- !private ["SH", "rounded"]
+- !private ["SH", "subscript"]
+- !private ["SH", "up"]
+- ["11SwiftSyntax12IdentifiableP", "Hashable"]
+- ["11SwiftSyntax12IdentifiableP", "Identifier"]
+- ["11SwiftSyntax12IdentifiableP", "id"]
+- !private ["Si", "init"]
+- !private ["Si", "max"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "max"]
+- !private ["s25LosslessStringConvertibleP", "rounded"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "max"]
+- !private ["Sj", "init"]
+- !private ["Sj", "max"]
+- !private ["Sj", "rounded"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["s10SIMDScalarP", "max"]
+- !private ["s10SIMDScalarP", "rounded"]
+- !private ["SZ", "init"]
+- !private ["SZ", "max"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s13SignedNumericP", "max"]
+- !private ["s13SignedNumericP", "rounded"]
+- !private ["Sx", "advanced"]
+- !private ["Sx", "allocate"]
+- !private ["Sx", "deallocate"]
+- !private ["Sx", "deinitialize"]
+- !private ["Sx", "init"]
+- !private ["Sx", "initialize"]
+- !private ["Sx", "max"]
+- !private ["Sx", "moveAssign"]
+- !private ["Sx", "pointee"]
+- !private ["Sx", "rounded"]
+- !private ["Sx", "subscript"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "rounded"]
+- !private ["Sp", "advanced"]
+- !private ["Sp", "allocate"]
+- !private ["Sp", "deallocate"]
+- !private ["Sp", "deinitialize"]
+- !private ["Sp", "initialize"]
+- !private ["Sp", "moveAssign"]
+- !private ["Sp", "pointee"]
+- !private ["Sp", "subscript"]
+- ["11SwiftSyntax15WeakLookupTableC", "Bool"]
+- ["11SwiftSyntax15WeakLookupTableC", "Double"]
+- ["11SwiftSyntax15WeakLookupTableC", "Int"]
+- ["11SwiftSyntax15WeakLookupTableC", "UnsafeMutablePointer"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "WeakLookupTable"]
+- ["11SwiftSyntax15WeakLookupTableC", "WeakReference"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "_bucketCount"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "_bucketMask"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "_countOccupiedBuckets"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "_ensurePlusOneCapacity"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "_findHole"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "_idealBucket"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "_minimalBucketCount"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "bucketCount"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "buckets"]
+- ["11SwiftSyntax15WeakLookupTableC", "deinit"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "estimatedCount"]
+- ["11SwiftSyntax15WeakLookupTableC", "init"]
+- ["11SwiftSyntax15WeakLookupTableC", "insert"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "maxLoadFactor"]
+- !private ["11SwiftSyntax15WeakLookupTableC", "precondition"]
+- ["11SwiftSyntax15WeakLookupTableC", "reserveCapacity"]
+- ["11SwiftSyntax15WeakLookupTableC", "subscript"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s15_CVarArgAlignedP", "rounded"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "rounded"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "advanced"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "allocate"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "deallocate"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "deinitialize"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "initialize"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "max"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "moveAssign"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "pointee"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "rounded"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "subscript"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "rounded"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "max"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "rounded"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "max"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "rounded"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "max"]
+- !private ["s21_ObjectiveCBridgeableP", "rounded"]
+- !private ["s8_PointerP", "advanced"]
+- !private ["s8_PointerP", "allocate"]
+- !private ["s8_PointerP", "deallocate"]
+- !private ["s8_PointerP", "deinitialize"]
+- !private ["s8_PointerP", "initialize"]
+- !private ["s8_PointerP", "moveAssign"]
+- !private ["s8_PointerP", "pointee"]
+- !private ["s8_PointerP", "subscript"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "Sd"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- "s23ExpressibleByNilLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SF"
+- !private "s25FloatingPointRoundingRuleO"
+- !private "SH"
+- "11SwiftSyntax12IdentifiableP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "Sj"
+- !private "s10SIMDScalarP"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s20TextOutputStreamableP"
+- !private "Sp"
+- "11SwiftSyntax15WeakLookupTableC"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "351a93582e520003dd7ef2bad2ae1650"

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C330966232CBFE400228FCC /* Architecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330965232CBFE400228FCC /* Architecture.swift */; };
+		3C330968232CC05D00228FCC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330967232CC05D00228FCC /* AppState.swift */; };
+		3C33096A232CC09200228FCC /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330969232CC09200228FCC /* Logging.swift */; };
+		3C33096C232CC15F00228FCC /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33096B232CC15F00228FCC /* Actions.swift */; };
+		3C33096E232CC1A700228FCC /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33096D232CC1A700228FCC /* Reducers.swift */; };
 		3C9DAB76232B05D80020C4BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB75232B05D80020C4BC /* AppDelegate.swift */; };
 		3C9DAB78232B05D80020C4BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */; };
 		3C9DAB7A232B05D80020C4BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB79232B05D80020C4BC /* ContentView.swift */; };
@@ -14,7 +19,6 @@
 		3C9DAB7F232B05DA0020C4BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB7E232B05DA0020C4BC /* Preview Assets.xcassets */; };
 		3C9DAB82232B05DA0020C4BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB80232B05DA0020C4BC /* LaunchScreen.storyboard */; };
 		3C9DAB8A232B06630020C4BC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB89232B06630020C4BC /* Utils.swift */; };
-		3C9DAB8C232B0EA30020C4BC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8B232B0EA30020C4BC /* AppState.swift */; };
 		3C9DAB8E232B0F430020C4BC /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8D232B0F430020C4BC /* CounterView.swift */; };
 		3C9DAB90232B0F7A0020C4BC /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */; };
 		3C9DAB92232B0F9F0020C4BC /* FavouritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */; };
@@ -23,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C330965232CBFE400228FCC /* Architecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture.swift; sourceTree = "<group>"; };
+		3C330967232CC05D00228FCC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		3C330969232CC09200228FCC /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		3C33096B232CC15F00228FCC /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		3C33096D232CC1A700228FCC /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
 		3C9DAB72232B05D80020C4BC /* Primes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Primes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9DAB75232B05D80020C4BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +41,6 @@
 		3C9DAB81232B05DA0020C4BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C9DAB83232B05DA0020C4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C9DAB89232B06630020C4BC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		3C9DAB8B232B0EA30020C4BC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		3C9DAB8D232B0F430020C4BC /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeModalView.swift; sourceTree = "<group>"; };
 		3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePrimesView.swift; sourceTree = "<group>"; };
@@ -51,6 +59,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C33096F232CC28B00228FCC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DAB8D232B0F430020C4BC /* CounterView.swift */,
+				3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */,
+				3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */,
+				3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */,
+				3C9DAB79232B05D80020C4BC /* ContentView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		3C330970232CC2A900228FCC /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DAB93232B46A60020C4BC /* Activity.swift */,
+				3C330969232CC09200228FCC /* Logging.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
 		3C9DAB69232B05D80020C4BC = {
 			isa = PBXGroup;
 			children = (
@@ -70,13 +99,12 @@
 		3C9DAB74232B05D80020C4BC /* Primes */ = {
 			isa = PBXGroup;
 			children = (
-				3C9DAB8B232B0EA30020C4BC /* AppState.swift */,
-				3C9DAB8D232B0F430020C4BC /* CounterView.swift */,
-				3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */,
-				3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */,
-				3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */,
-				3C9DAB79232B05D80020C4BC /* ContentView.swift */,
-				3C9DAB93232B46A60020C4BC /* Activity.swift */,
+				3C330965232CBFE400228FCC /* Architecture.swift */,
+				3C330967232CC05D00228FCC /* AppState.swift */,
+				3C33096B232CC15F00228FCC /* Actions.swift */,
+				3C33096D232CC1A700228FCC /* Reducers.swift */,
+				3C33096F232CC28B00228FCC /* views */,
+				3C330970232CC2A900228FCC /* Logging */,
 				3C9DAB89232B06630020C4BC /* Utils.swift */,
 				3C9DAB7B232B05DA0020C4BC /* Assets.xcassets */,
 				3C9DAB80232B05DA0020C4BC /* LaunchScreen.storyboard */,
@@ -168,15 +196,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9DAB76232B05D80020C4BC /* AppDelegate.swift in Sources */,
-				3C9DAB8C232B0EA30020C4BC /* AppState.swift in Sources */,
+				3C33096A232CC09200228FCC /* Logging.swift in Sources */,
 				3C9DAB78232B05D80020C4BC /* SceneDelegate.swift in Sources */,
 				3C9DAB7A232B05D80020C4BC /* ContentView.swift in Sources */,
 				3C9DAB92232B0F9F0020C4BC /* FavouritePrimesView.swift in Sources */,
+				3C33096E232CC1A700228FCC /* Reducers.swift in Sources */,
 				3C9DAB96232B54A30020C4BC /* ActivityFeedView.swift in Sources */,
+				3C330966232CBFE400228FCC /* Architecture.swift in Sources */,
 				3C9DAB8A232B06630020C4BC /* Utils.swift in Sources */,
 				3C9DAB94232B46A60020C4BC /* Activity.swift in Sources */,
 				3C9DAB90232B0F7A0020C4BC /* IsPrimeModalView.swift in Sources */,
 				3C9DAB8E232B0F430020C4BC /* CounterView.swift in Sources */,
+				3C330968232CC05D00228FCC /* AppState.swift in Sources */,
+				3C33096C232CC15F00228FCC /* Actions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -98,5 +98,31 @@ extension Activity.ActivityType: Codable {
     }
 }
     
+// MARK: - Aspect activityFeed
+
+func activityFeed(
+    _ reducer: @escaping (inout AppState, AppAction) -> Void)
+    -> (inout AppState, AppAction) -> Void {
+        
+    return { state, action in
+        switch action {
+        case .counter:
+            break
+        
+        case let .favouritePrimes(.deleteFavouritePrime(indexSet)):
+            for index in indexSet {
+                let prime = state.favouritePrimes[index]
+                state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
+            }
+       
+        case .isPrimeModal(.addFavouritePrimeTapped):
+            state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
+       
+        case .isPrimeModal(.removeFavouritePrimeTapped):
+            state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
+        }
+        return reducer(&state, action)
+    }
+}
 
 

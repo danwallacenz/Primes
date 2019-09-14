@@ -26,13 +26,15 @@ final class Store<Value, Action>: ObservableObject {
     }
 }
 
-func pullback<LocalValue, GlobalValue, Action>(
-    _ reducer: @escaping (inout LocalValue, Action) -> Void,
-    value: WritableKeyPath<GlobalValue, LocalValue>
-) -> (inout GlobalValue, Action) -> Void {
+func pullback<LocalValue, GlobalValue, GlobalAction, LocalAction>(
+    _ reducer: @escaping (inout LocalValue, LocalAction) -> Void,
+    value: WritableKeyPath<GlobalValue, LocalValue>,
+    action: WritableKeyPath<GlobalAction, LocalAction?>
+) -> (inout GlobalValue, GlobalAction) -> Void {
     
-    return { globalValue, action in
-        reducer(&globalValue[keyPath: value], action)
+    return { globalValue, globalAction in
+        guard let localAction = globalAction[keyPath: action] else { return }
+        reducer(&globalValue[keyPath: value], localAction)
     }
 }
 
@@ -120,60 +122,29 @@ enum AppAction {
 
 // MARK:- Reducers
 
-// Enums also have two very fundamental operations that can be performed on them, and they are pretty similar to the get and set of key paths. For some enum type, you can take a value and embed it into one of the cases of the enum, or you can take a value of the enum and try to extract out the associated data in one of its cases.
-//struct _KeyPath<Root, Value> {
-//  let get: (Root) -> Value
-//  let set: (inout Root, Value) -> Void
-//}
-//AppAction.counter(CounterAction.decrTapped)
-
-//AppAction.favouritePrimes(FavouritePrimesAction.deleteFavouritePrime([1]))
-//let action = AppAction.favoritePrimes(.deleteFavoritePrimes([1]))
-//let favoritePrimesAction: FavoritePrimesAction?
-//switch action {
-//case let .favoritePrimes(action):
-//    favoritePrimesAction = action
-//default:
-//    favoritePrimesAction = nil
-//}
-
-//struct EnumKeyPath<Root, Value> {
-//  let embed: (Value) -> Root
-//  let extract: (Root) -> Value?
-//}
-
-// \AppAction.counter // EnumKeyPath<AppAction, CounterAction>
-
 // pass only the part of the AppState we care about (count)
-//func counterReducer(state: inout Int, action: CounterAction) -> Void {
-func counterReducer(state: inout Int, action: AppAction) -> Void {
+func counterReducer(state: inout Int, action: CounterAction) -> Void {
     
     switch action {
-    case .counter(.decrTapped):
+    case .decrTapped:
         state -= 1
     
-    case .counter(.incrTapped):
+    case .incrTapped:
         state += 1
-    
-    default:
-        break
     }
 }
 
-func isPrimeModalReducer(state: inout AppState, action: AppAction) -> Void {
+func isPrimeModalReducer(state: inout AppState, action: IsPrimeModalAction) -> Void {
     
     switch action {
-    case .isPrimeModal(.addFavouritePrimeTapped):
+    case .addFavouritePrimeTapped:
         state.favouritePrimes.append(state.count)
         state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
 
-    case .isPrimeModal(.removeFavouritePrimeTapped):
+    case .removeFavouritePrimeTapped:
         let count = state.count // must do this when using inout
         state.favouritePrimes.removeAll(where: { $0 == count })
         state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
-        
-    default:
-        break
     }
 }
 
@@ -199,28 +170,26 @@ struct FavouritePrimesState {
 
 
 // pass only the parts of the AppState we care about (favouritePrimes and activityFeed)
-func favouritePrimesReducer(state: inout FavouritePrimesState, action: AppAction) -> Void {
+func favouritePrimesReducer(state: inout FavouritePrimesState, action: FavouritePrimesAction) -> Void {
     
     switch action {
-    case .favouritePrimes(.deleteFavouritePrime(let indexSet)):
+    case .deleteFavouritePrime(let indexSet):
         for index in indexSet {
             let prime = state.favouritePrimes[index]
             state.favouritePrimes.removeAll(where: { $0 == prime })
             state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
         }
-   
-    default:
-        break
     }
 }
 
 // MARK: - App Reducer
 
-let appReducer = combine(
-    pullback(counterReducer, value: \.count),
-    isPrimeModalReducer,
-    pullback(favouritePrimesReducer, value: \.favouritePrimesState)
+let _appReducer: (inout AppState, AppAction) -> Void = combine(
+    pullback(counterReducer, value: \.count, action: \.counter),
+    pullback(isPrimeModalReducer, value: \.self, action: \.isPrimeModal),
+    pullback(favouritePrimesReducer, value: \.favouritePrimesState, action: \.favouritePrimes)
 )
+let appReducer = pullback(_appReducer, value: \.self, action: \.self)
 
 // MARK: -
 
@@ -281,7 +250,7 @@ extension AppState: Codable {
         if let json = try? JSONEncoder().encode(self) {
             UserDefaults.standard.set(json, forKey: "APP_STATE")
         } else {
-            print("could not encode \(self)")
+            fatalError("could not encode \(self)")
         }
     }
 }

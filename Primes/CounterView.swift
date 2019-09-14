@@ -30,9 +30,11 @@ struct CounterView: View {
                     
                 }) {
                     Text("-")
-                }
+                }.padding()
                 
-                Text("\(self.store.value.count)").foregroundColor(color)
+                Text("\(self.store.value.count)")
+                    .padding()
+                    .foregroundColor(color)
 
                 Button(action: {
                     
@@ -40,7 +42,7 @@ struct CounterView: View {
                     
                 }) {
                      Text("+")
-                }
+                }.padding()
             }
             
             // Initiates modal

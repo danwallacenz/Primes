@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Activity {
+struct Activity: Codable {
     let timestamp: Date
     let type: ActivityType
 
@@ -18,31 +18,15 @@ struct Activity {
     }
 }
 
-extension Activity: Codable {
-    
-    enum CodingKeys: String, CodingKey {
-        case timestamp
-        case type
-    }
-    
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        timestamp = try values.decode(Date.self, forKey: .timestamp)
-        type = try values.decode(ActivityType.self, forKey: .type)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(timestamp, forKey: .timestamp)
-        try container.encode(type, forKey: .type)
-    }
-}
+// MARK: - Identifiable
 
 extension Activity: Identifiable {
     var id: Int {
         Int(timestamp.timeIntervalSince1970)
     }
 }
+
+// MARK: - CustomStringConvertible
 
 extension Activity: CustomStringConvertible {
     
@@ -62,6 +46,8 @@ extension Activity: CustomStringConvertible {
         }
     }
 }
+
+// MARK: - Codable
 
 extension Activity.ActivityType: Codable {
 
@@ -98,32 +84,4 @@ extension Activity.ActivityType: Codable {
         }
     }
 }
-    
-// MARK: - Aspect activityFeed
-
-func activityFeed(
-    _ reducer: @escaping (inout AppState, AppAction) -> Void)
-    -> (inout AppState, AppAction) -> Void {
-        
-    return { state, action in
-        switch action {
-        case .counter:
-            break
-        
-        case let .favouritePrimes(.deleteFavouritePrime(indexSet)):
-            for index in indexSet {
-                let prime = state.favouritePrimes[index]
-                state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
-            }
-       
-        case .primeModal(.addFavouritePrimeTapped):
-            state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
-       
-        case .primeModal(.removeFavouritePrimeTapped):
-            state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
-        }
-        return reducer(&state, action)
-    }
-}
-
 

@@ -26,6 +26,8 @@ struct AppState {
     }
 }
 
+// MARK:- Computed property: provides a KeyPath
+
 // for provide a keypath for appReducer - don't like this much
 extension AppState {
     var primeModal: PrimeModalState {
@@ -39,7 +41,7 @@ extension AppState {
     }
 }
 
-// MARK:- AppState Codable
+// MARK:- Save/load
 
 extension AppState: Codable {
     
@@ -59,29 +61,9 @@ extension AppState: Codable {
             fatalError("could not encode \(self)")
         }
     }
-    
-    enum CodingKeys: String, CodingKey {
-        case count
-        case favouritePrimes
-        case activityFeed
-    }
-    
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        count = try values.decode(Int.self, forKey: .count)
-        favouritePrimes = try values.decode([Int].self, forKey: .favouritePrimes)
-        activityFeed = try values.decode([Activity].self, forKey: .activityFeed)
-    }
-    
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(count, forKey: .count)
-        try container.encode(favouritePrimes, forKey: .favouritePrimes)
-        try container.encode(activityFeed, forKey: .activityFeed)
-    }
 }
 
-// MARK:-
+// MARK:- CustomStringConvertible
 
 extension AppState: CustomStringConvertible {
     var description: String {

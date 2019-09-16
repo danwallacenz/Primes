@@ -19,3 +19,30 @@ let _appReducer: (inout AppState, AppAction) -> Void = combine(
     pullback(favouritePrimesReducer,    value:  \.favouritePrimes,  action: \.favouritePrimes)
 )
 let appReducer = pullback(_appReducer, value: \.self, action: \.self)
+
+// MARK: - Aspect activityFeed
+
+func activityFeed(
+    _ reducer: @escaping (inout AppState, AppAction) -> Void)
+    -> (inout AppState, AppAction) -> Void {
+        
+    return { state, action in
+        switch action {
+        case .counter:
+            break
+        
+        case let .favouritePrimes(.deleteFavouritePrime(indexSet)):
+            for index in indexSet {
+                let prime = state.favouritePrimes[index]
+                state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
+            }
+       
+        case .primeModal(.addFavouritePrimeTapped):
+            state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
+       
+        case .primeModal(.removeFavouritePrimeTapped):
+            state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
+        }
+        return reducer(&state, action)
+    }
+}

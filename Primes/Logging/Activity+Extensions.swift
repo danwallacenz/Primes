@@ -8,19 +8,9 @@
 
 import Foundation
 
-struct Activity: Codable {
-    let timestamp: Date
-    let type: ActivityType
-
-    enum ActivityType {
-        case addedFavoritePrime(Int)
-        case removedFavoritePrime(Int)
-    }
-}
-
 // MARK: - Identifiable
 
-extension Activity: Identifiable {
+extension AppState.Activity: Identifiable {
     var id: Int {
         Int(timestamp.timeIntervalSince1970)
     }
@@ -28,7 +18,7 @@ extension Activity: Identifiable {
 
 // MARK: - CustomStringConvertible
 
-extension Activity: CustomStringConvertible {
+extension AppState.Activity: CustomStringConvertible {
     
     static var formatter: DateFormatter = {
         let f = DateFormatter()
@@ -40,16 +30,16 @@ extension Activity: CustomStringConvertible {
     var description: String {
         switch type {
         case .addedFavoritePrime(let count):
-            return "Added [ \(count) ] \(Activity.formatter.string(from: timestamp))"
+            return "Added [ \(count) ] \(AppState.Activity.formatter.string(from: timestamp))"
         case .removedFavoritePrime(let count):
-            return "Removed [ \(count) ] \(Activity.formatter.string(from: timestamp))"
+            return "Removed [ \(count) ] \(AppState.Activity.formatter.string(from: timestamp))"
         }
     }
 }
 
 // MARK: - Codable
 
-extension Activity.ActivityType: Codable {
+extension AppState.Activity.ActivityType: Codable {
 
     enum CodingKeys: String, CodingKey {
         case addedFavoritePrime

@@ -24,6 +24,16 @@ struct AppState {
             saveState()
         }
     }
+    
+    struct Activity: Codable {
+        let timestamp: Date
+        let type: ActivityType
+
+        enum ActivityType {
+            case addedFavoritePrime(Int)
+            case removedFavoritePrime(Int)
+        }
+    }
 }
 
 // MARK:- Computed property: provides a KeyPath

@@ -34,14 +34,14 @@ func activityFeed(
         case let .favouritePrimes(.deleteFavouritePrime(indexSet)):
             for index in indexSet {
                 let prime = state.favouritePrimes[index]
-                state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
+                state.activityFeed.append(AppState.Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
             }
        
         case .primeModal(.addFavouritePrimeTapped):
-            state.activityFeed.append(Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
+            state.activityFeed.append(AppState.Activity(timestamp: Date(), type: .addedFavoritePrime(state.count)))
        
         case .primeModal(.removeFavouritePrimeTapped):
-            state.activityFeed.append(Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
+            state.activityFeed.append(AppState.Activity(timestamp: Date(), type: .removedFavoritePrime(state.count)))
         }
         return reducer(&state, action)
     }

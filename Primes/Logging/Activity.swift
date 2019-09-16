@@ -74,6 +74,7 @@ extension Activity.ActivityType: Codable {
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
+        
         if let addedFavoritePrime = try? values.decode(Int.self, forKey: .addedFavoritePrime) {
           self = .addedFavoritePrime(addedFavoritePrime)
           return

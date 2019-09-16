@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C330966232CBFE400228FCC /* Architecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330965232CBFE400228FCC /* Architecture.swift */; };
 		3C330968232CC05D00228FCC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330967232CC05D00228FCC /* AppState.swift */; };
-		3C33096A232CC09200228FCC /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330969232CC09200228FCC /* Logging.swift */; };
 		3C33096C232CC15F00228FCC /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33096B232CC15F00228FCC /* Actions.swift */; };
 		3C33096E232CC1A700228FCC /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33096D232CC1A700228FCC /* Reducers.swift */; };
 		3C33097F232CE0EF00228FCC /* Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C330976232CE0EF00228FCC /* Counter.framework */; };
@@ -155,9 +153,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C330965232CBFE400228FCC /* Architecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture.swift; sourceTree = "<group>"; };
 		3C330967232CC05D00228FCC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		3C330969232CC09200228FCC /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		3C33096B232CC15F00228FCC /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		3C33096D232CC1A700228FCC /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
 		3C330976232CE0EF00228FCC /* Counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -295,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				3C9DAB93232B46A60020C4BC /* Activity.swift */,
-				3C330969232CC09200228FCC /* Logging.swift */,
 			);
 			path = Logging;
 			sourceTree = "<group>";
@@ -411,7 +406,6 @@
 		3C9DAB74232B05D80020C4BC /* Primes */ = {
 			isa = PBXGroup;
 			children = (
-				3C330965232CBFE400228FCC /* Architecture.swift */,
 				3C330967232CC05D00228FCC /* AppState.swift */,
 				3C33096B232CC15F00228FCC /* Actions.swift */,
 				3C33096D232CC1A700228FCC /* Reducers.swift */,
@@ -856,13 +850,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9DAB76232B05D80020C4BC /* AppDelegate.swift in Sources */,
-				3C33096A232CC09200228FCC /* Logging.swift in Sources */,
 				3C9DAB78232B05D80020C4BC /* SceneDelegate.swift in Sources */,
 				3C9DAB7A232B05D80020C4BC /* ContentView.swift in Sources */,
 				3C9DAB92232B0F9F0020C4BC /* FavouritePrimesView.swift in Sources */,
 				3C33096E232CC1A700228FCC /* Reducers.swift in Sources */,
 				3C9DAB96232B54A30020C4BC /* ActivityFeedView.swift in Sources */,
-				3C330966232CBFE400228FCC /* Architecture.swift in Sources */,
 				3C9DAB8A232B06630020C4BC /* Utils.swift in Sources */,
 				3C9DAB94232B46A60020C4BC /* Activity.swift in Sources */,
 				3C9DAB90232B0F7A0020C4BC /* IsPrimeModalView.swift in Sources */,

@@ -68,13 +68,6 @@
 			remoteGlobalIDString = 3C9DAB71232B05D80020C4BC;
 			remoteInfo = Primes;
 		};
-		3C330989232CE0EF00228FCC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C330975232CE0EF00228FCC;
-			remoteInfo = Counter;
-		};
 		3C3309A3232CE10000228FCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
@@ -88,13 +81,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3C9DAB71232B05D80020C4BC;
 			remoteInfo = Primes;
-		};
-		3C3309AC232CE10000228FCC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C330998232CE10000228FCC;
-			remoteInfo = PrimeModal;
 		};
 		3C3309C5232CE11400228FCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -110,13 +96,6 @@
 			remoteGlobalIDString = 3C9DAB71232B05D80020C4BC;
 			remoteInfo = Primes;
 		};
-		3C3309CE232CE11400228FCC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C3309BA232CE11400228FCC;
-			remoteInfo = FavoritePrimes;
-		};
 		3C3309E7232CE12600228FCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
@@ -131,12 +110,33 @@
 			remoteGlobalIDString = 3C9DAB71232B05D80020C4BC;
 			remoteInfo = Primes;
 		};
-		3C3309F0232CE12600228FCC /* PBXContainerItemProxy */ = {
+		3C7AF6CA233261FA003B2409 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3C3309DC232CE12600228FCC;
 			remoteInfo = ComposableArchitecture;
+		};
+		3C7AF6CC233261FA003B2409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C330975232CE0EF00228FCC;
+			remoteInfo = Counter;
+		};
+		3C7AF6CE233261FA003B2409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C3309BA232CE11400228FCC;
+			remoteInfo = FavoritePrimes;
+		};
+		3C7AF6D0233261FA003B2409 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C330998232CE10000228FCC;
+			remoteInfo = PrimeModal;
 		};
 		3CCC5DB223323ED900BF685B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -709,10 +709,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3C33098A232CE0EF00228FCC /* PBXTargetDependency */,
-				3C3309AD232CE10000228FCC /* PBXTargetDependency */,
-				3C3309CF232CE11400228FCC /* PBXTargetDependency */,
-				3C3309F1232CE12600228FCC /* PBXTargetDependency */,
 				3CCC5DBC23323ED900BF685B /* PBXTargetDependency */,
 			);
 			name = Primes;
@@ -732,6 +728,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				3C7AF6CB233261FA003B2409 /* PBXTargetDependency */,
+				3C7AF6CD233261FA003B2409 /* PBXTargetDependency */,
+				3C7AF6CF233261FA003B2409 /* PBXTargetDependency */,
+				3C7AF6D1233261FA003B2409 /* PBXTargetDependency */,
 			);
 			name = PrimeFramework;
 			productName = PrimeFramework;
@@ -1034,11 +1034,6 @@
 			target = 3C9DAB71232B05D80020C4BC /* Primes */;
 			targetProxy = 3C330982232CE0EF00228FCC /* PBXContainerItemProxy */;
 		};
-		3C33098A232CE0EF00228FCC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C330975232CE0EF00228FCC /* Counter */;
-			targetProxy = 3C330989232CE0EF00228FCC /* PBXContainerItemProxy */;
-		};
 		3C3309A4232CE10000228FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C330998232CE10000228FCC /* PrimeModal */;
@@ -1048,11 +1043,6 @@
 			isa = PBXTargetDependency;
 			target = 3C9DAB71232B05D80020C4BC /* Primes */;
 			targetProxy = 3C3309A5232CE10000228FCC /* PBXContainerItemProxy */;
-		};
-		3C3309AD232CE10000228FCC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C330998232CE10000228FCC /* PrimeModal */;
-			targetProxy = 3C3309AC232CE10000228FCC /* PBXContainerItemProxy */;
 		};
 		3C3309C6232CE11400228FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1064,11 +1054,6 @@
 			target = 3C9DAB71232B05D80020C4BC /* Primes */;
 			targetProxy = 3C3309C7232CE11400228FCC /* PBXContainerItemProxy */;
 		};
-		3C3309CF232CE11400228FCC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C3309BA232CE11400228FCC /* FavoritePrimes */;
-			targetProxy = 3C3309CE232CE11400228FCC /* PBXContainerItemProxy */;
-		};
 		3C3309E8232CE12600228FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C3309DC232CE12600228FCC /* ComposableArchitecture */;
@@ -1079,10 +1064,25 @@
 			target = 3C9DAB71232B05D80020C4BC /* Primes */;
 			targetProxy = 3C3309E9232CE12600228FCC /* PBXContainerItemProxy */;
 		};
-		3C3309F1232CE12600228FCC /* PBXTargetDependency */ = {
+		3C7AF6CB233261FA003B2409 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C3309DC232CE12600228FCC /* ComposableArchitecture */;
-			targetProxy = 3C3309F0232CE12600228FCC /* PBXContainerItemProxy */;
+			targetProxy = 3C7AF6CA233261FA003B2409 /* PBXContainerItemProxy */;
+		};
+		3C7AF6CD233261FA003B2409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C330975232CE0EF00228FCC /* Counter */;
+			targetProxy = 3C7AF6CC233261FA003B2409 /* PBXContainerItemProxy */;
+		};
+		3C7AF6CF233261FA003B2409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C3309BA232CE11400228FCC /* FavoritePrimes */;
+			targetProxy = 3C7AF6CE233261FA003B2409 /* PBXContainerItemProxy */;
+		};
+		3C7AF6D1233261FA003B2409 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C330998232CE10000228FCC /* PrimeModal */;
+			targetProxy = 3C7AF6D0233261FA003B2409 /* PBXContainerItemProxy */;
 		};
 		3CCC5DB323323ED900BF685B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

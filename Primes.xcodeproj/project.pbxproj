@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C330968232CC05D00228FCC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330967232CC05D00228FCC /* AppState.swift */; };
-		3C33096C232CC15F00228FCC /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33096B232CC15F00228FCC /* Actions.swift */; };
-		3C33096E232CC1A700228FCC /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33096D232CC1A700228FCC /* Reducers.swift */; };
+		3C0A7B262332455200599B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB7B232B05DA0020C4BC /* Assets.xcassets */; };
+		3C0A7B272332459100599B75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */; };
 		3C33097F232CE0EF00228FCC /* Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C330976232CE0EF00228FCC /* Counter.framework */; };
 		3C330986232CE0EF00228FCC /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330985232CE0EF00228FCC /* CounterTests.swift */; };
 		3C330988232CE0EF00228FCC /* Counter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C330978232CE0EF00228FCC /* Counter.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -35,17 +34,23 @@
 		3C3309FF232CE3E600228FCC /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3309FE232CE3E600228FCC /* Counter.swift */; };
 		3C330A01232CE49D00228FCC /* PrimeModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330A00232CE49D00228FCC /* PrimeModal.swift */; };
 		3C9DAB76232B05D80020C4BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB75232B05D80020C4BC /* AppDelegate.swift */; };
-		3C9DAB78232B05D80020C4BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */; };
-		3C9DAB7A232B05D80020C4BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB79232B05D80020C4BC /* ContentView.swift */; };
-		3C9DAB7C232B05DA0020C4BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB7B232B05DA0020C4BC /* Assets.xcassets */; };
 		3C9DAB7F232B05DA0020C4BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB7E232B05DA0020C4BC /* Preview Assets.xcassets */; };
 		3C9DAB82232B05DA0020C4BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DAB80232B05DA0020C4BC /* LaunchScreen.storyboard */; };
-		3C9DAB8A232B06630020C4BC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB89232B06630020C4BC /* Utils.swift */; };
-		3C9DAB8E232B0F430020C4BC /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8D232B0F430020C4BC /* CounterView.swift */; };
-		3C9DAB90232B0F7A0020C4BC /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */; };
-		3C9DAB92232B0F9F0020C4BC /* FavouritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */; };
-		3C9DAB94232B46A60020C4BC /* Activity+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB93232B46A60020C4BC /* Activity+Extensions.swift */; };
-		3C9DAB96232B54A30020C4BC /* ActivityFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */; };
+		3CCC5DB123323ED900BF685B /* PrimeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCC5DA823323ED900BF685B /* PrimeFramework.framework */; };
+		3CCC5DB823323ED900BF685B /* PrimeFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC5DB723323ED900BF685B /* PrimeFrameworkTests.swift */; };
+		3CCC5DBA23323ED900BF685B /* PrimeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCC5DAA23323ED900BF685B /* PrimeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCC5DBD23323ED900BF685B /* PrimeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCC5DA823323ED900BF685B /* PrimeFramework.framework */; };
+		3CCC5DBE23323ED900BF685B /* PrimeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCC5DA823323ED900BF685B /* PrimeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CCC5DC523323F3600BF685B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB89232B06630020C4BC /* Utils.swift */; };
+		3CCC5DC623323F3600BF685B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C330967232CC05D00228FCC /* AppState.swift */; };
+		3CCC5DC723323F3600BF685B /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33096B232CC15F00228FCC /* Actions.swift */; };
+		3CCC5DC823323F3600BF685B /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C33096D232CC1A700228FCC /* Reducers.swift */; };
+		3CCC5DC92332405F00BF685B /* Activity+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB93232B46A60020C4BC /* Activity+Extensions.swift */; };
+		3CCC5DCA233240B000BF685B /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8D232B0F430020C4BC /* CounterView.swift */; };
+		3CCC5DCB233240B500BF685B /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB8F232B0F7A0020C4BC /* IsPrimeModalView.swift */; };
+		3CCC5DCC233240BB00BF685B /* FavouritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */; };
+		3CCC5DCD233240C000BF685B /* ActivityFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */; };
+		3CCC5DCE233240C300BF685B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DAB79232B05D80020C4BC /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +138,27 @@
 			remoteGlobalIDString = 3C3309DC232CE12600228FCC;
 			remoteInfo = ComposableArchitecture;
 		};
+		3CCC5DB223323ED900BF685B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCC5DA723323ED900BF685B;
+			remoteInfo = PrimeFramework;
+		};
+		3CCC5DB423323ED900BF685B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C9DAB71232B05D80020C4BC;
+			remoteInfo = Primes;
+		};
+		3CCC5DBB23323ED900BF685B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C9DAB6A232B05D80020C4BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CCC5DA723323ED900BF685B;
+			remoteInfo = PrimeFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -144,6 +170,7 @@
 			files = (
 				3C3309F3232CE12600228FCC /* ComposableArchitecture.framework in Embed Frameworks */,
 				3C3309AF232CE10000228FCC /* PrimeModal.framework in Embed Frameworks */,
+				3CCC5DBE23323ED900BF685B /* PrimeFramework.framework in Embed Frameworks */,
 				3C33098C232CE0EF00228FCC /* Counter.framework in Embed Frameworks */,
 				3C3309D1232CE11400228FCC /* FavoritePrimes.framework in Embed Frameworks */,
 			);
@@ -198,6 +225,13 @@
 		3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePrimesView.swift; sourceTree = "<group>"; };
 		3C9DAB93232B46A60020C4BC /* Activity+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+Extensions.swift"; sourceTree = "<group>"; };
 		3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedView.swift; sourceTree = "<group>"; };
+		3CCC5DA223323E2800BF685B /* Primes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Primes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3CCC5DA823323ED900BF685B /* PrimeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrimeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCC5DAA23323ED900BF685B /* PrimeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimeFramework.h; sourceTree = "<group>"; };
+		3CCC5DAB23323ED900BF685B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CCC5DB023323ED900BF685B /* PrimeFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimeFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CCC5DB723323ED900BF685B /* PrimeFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFrameworkTests.swift; sourceTree = "<group>"; };
+		3CCC5DB923323ED900BF685B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,8 +301,24 @@
 			files = (
 				3C3309F2232CE12600228FCC /* ComposableArchitecture.framework in Frameworks */,
 				3C3309AE232CE10000228FCC /* PrimeModal.framework in Frameworks */,
+				3CCC5DBD23323ED900BF685B /* PrimeFramework.framework in Frameworks */,
 				3C33098B232CE0EF00228FCC /* Counter.framework in Frameworks */,
 				3C3309D0232CE11400228FCC /* FavoritePrimes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCC5DA523323ED900BF685B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCC5DAD23323ED900BF685B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCC5DB123323ED900BF685B /* PrimeFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +424,7 @@
 		3C9DAB69232B05D80020C4BC = {
 			isa = PBXGroup;
 			children = (
+				3CCC5DA223323E2800BF685B /* Primes.playground */,
 				3C9DAB74232B05D80020C4BC /* Primes */,
 				3C330977232CE0EF00228FCC /* Counter */,
 				3C330984232CE0EF00228FCC /* CounterTests */,
@@ -383,6 +434,8 @@
 				3C3309C9232CE11400228FCC /* FavoritePrimesTests */,
 				3C3309DE232CE12600228FCC /* ComposableArchitecture */,
 				3C3309EB232CE12600228FCC /* ComposableArchitectureTests */,
+				3CCC5DA923323ED900BF685B /* PrimeFramework */,
+				3CCC5DB623323ED900BF685B /* PrimeFrameworkTests */,
 				3C9DAB73232B05D80020C4BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -399,6 +452,8 @@
 				3C3309C3232CE11400228FCC /* FavoritePrimesTests.xctest */,
 				3C3309DD232CE12600228FCC /* ComposableArchitecture.framework */,
 				3C3309E5232CE12600228FCC /* ComposableArchitectureTests.xctest */,
+				3CCC5DA823323ED900BF685B /* PrimeFramework.framework */,
+				3CCC5DB023323ED900BF685B /* PrimeFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -406,17 +461,11 @@
 		3C9DAB74232B05D80020C4BC /* Primes */ = {
 			isa = PBXGroup;
 			children = (
-				3C330967232CC05D00228FCC /* AppState.swift */,
-				3C33096B232CC15F00228FCC /* Actions.swift */,
-				3C33096D232CC1A700228FCC /* Reducers.swift */,
-				3C33096F232CC28B00228FCC /* views */,
-				3C330970232CC2A900228FCC /* Logging */,
-				3C9DAB89232B06630020C4BC /* Utils.swift */,
-				3C9DAB7B232B05DA0020C4BC /* Assets.xcassets */,
 				3C9DAB80232B05DA0020C4BC /* LaunchScreen.storyboard */,
 				3C9DAB83232B05DA0020C4BC /* Info.plist */,
 				3C9DAB75232B05D80020C4BC /* AppDelegate.swift */,
 				3C9DAB77232B05D80020C4BC /* SceneDelegate.swift */,
+				3C9DAB7B232B05DA0020C4BC /* Assets.xcassets */,
 				3C9DAB7D232B05DA0020C4BC /* Preview Content */,
 			);
 			path = Primes;
@@ -428,6 +477,30 @@
 				3C9DAB7E232B05DA0020C4BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CCC5DA923323ED900BF685B /* PrimeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				3C330967232CC05D00228FCC /* AppState.swift */,
+				3C33096B232CC15F00228FCC /* Actions.swift */,
+				3C33096D232CC1A700228FCC /* Reducers.swift */,
+				3C33096F232CC28B00228FCC /* views */,
+				3C330970232CC2A900228FCC /* Logging */,
+				3C9DAB89232B06630020C4BC /* Utils.swift */,
+				3CCC5DAA23323ED900BF685B /* PrimeFramework.h */,
+				3CCC5DAB23323ED900BF685B /* Info.plist */,
+			);
+			path = PrimeFramework;
+			sourceTree = "<group>";
+		};
+		3CCC5DB623323ED900BF685B /* PrimeFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CCC5DB723323ED900BF685B /* PrimeFrameworkTests.swift */,
+				3CCC5DB923323ED900BF685B /* Info.plist */,
+			);
+			path = PrimeFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,6 +535,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C3309EF232CE12600228FCC /* ComposableArchitecture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCC5DA323323ED900BF685B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCC5DBA23323ED900BF685B /* PrimeFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,11 +713,49 @@
 				3C3309AD232CE10000228FCC /* PBXTargetDependency */,
 				3C3309CF232CE11400228FCC /* PBXTargetDependency */,
 				3C3309F1232CE12600228FCC /* PBXTargetDependency */,
+				3CCC5DBC23323ED900BF685B /* PBXTargetDependency */,
 			);
 			name = Primes;
 			productName = Primes;
 			productReference = 3C9DAB72232B05D80020C4BC /* Primes.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3CCC5DA723323ED900BF685B /* PrimeFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCC5DBF23323ED900BF685B /* Build configuration list for PBXNativeTarget "PrimeFramework" */;
+			buildPhases = (
+				3CCC5DA323323ED900BF685B /* Headers */,
+				3CCC5DA423323ED900BF685B /* Sources */,
+				3CCC5DA523323ED900BF685B /* Frameworks */,
+				3CCC5DA623323ED900BF685B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrimeFramework;
+			productName = PrimeFramework;
+			productReference = 3CCC5DA823323ED900BF685B /* PrimeFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3CCC5DAF23323ED900BF685B /* PrimeFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CCC5DC223323ED900BF685B /* Build configuration list for PBXNativeTarget "PrimeFrameworkTests" */;
+			buildPhases = (
+				3CCC5DAC23323ED900BF685B /* Sources */,
+				3CCC5DAD23323ED900BF685B /* Frameworks */,
+				3CCC5DAE23323ED900BF685B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CCC5DB323323ED900BF685B /* PBXTargetDependency */,
+				3CCC5DB523323ED900BF685B /* PBXTargetDependency */,
+			);
+			name = PrimeFrameworkTests;
+			productName = PrimeFrameworkTests;
+			productReference = 3CCC5DB023323ED900BF685B /* PrimeFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -683,6 +802,13 @@
 					3C9DAB71232B05D80020C4BC = {
 						CreatedOnToolsVersion = 11.0;
 					};
+					3CCC5DA723323ED900BF685B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					3CCC5DAF23323ED900BF685B = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 3C9DAB71232B05D80020C4BC;
+					};
 				};
 			};
 			buildConfigurationList = 3C9DAB6D232B05D80020C4BC /* Build configuration list for PBXProject "Primes" */;
@@ -707,6 +833,8 @@
 				3C3309C2232CE11400228FCC /* FavoritePrimesTests */,
 				3C3309DC232CE12600228FCC /* ComposableArchitecture */,
 				3C3309E4232CE12600228FCC /* ComposableArchitectureTests */,
+				3CCC5DA723323ED900BF685B /* PrimeFramework */,
+				3CCC5DAF23323ED900BF685B /* PrimeFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -773,8 +901,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9DAB82232B05DA0020C4BC /* LaunchScreen.storyboard in Resources */,
+				3C0A7B262332455200599B75 /* Assets.xcassets in Resources */,
 				3C9DAB7F232B05DA0020C4BC /* Preview Assets.xcassets in Resources */,
-				3C9DAB7C232B05DA0020C4BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCC5DA623323ED900BF685B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCC5DAE23323ED900BF685B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -850,17 +992,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9DAB76232B05D80020C4BC /* AppDelegate.swift in Sources */,
-				3C9DAB78232B05D80020C4BC /* SceneDelegate.swift in Sources */,
-				3C9DAB7A232B05D80020C4BC /* ContentView.swift in Sources */,
-				3C9DAB92232B0F9F0020C4BC /* FavouritePrimesView.swift in Sources */,
-				3C33096E232CC1A700228FCC /* Reducers.swift in Sources */,
-				3C9DAB96232B54A30020C4BC /* ActivityFeedView.swift in Sources */,
-				3C9DAB8A232B06630020C4BC /* Utils.swift in Sources */,
-				3C9DAB94232B46A60020C4BC /* Activity+Extensions.swift in Sources */,
-				3C9DAB90232B0F7A0020C4BC /* IsPrimeModalView.swift in Sources */,
-				3C9DAB8E232B0F430020C4BC /* CounterView.swift in Sources */,
-				3C330968232CC05D00228FCC /* AppState.swift in Sources */,
-				3C33096C232CC15F00228FCC /* Actions.swift in Sources */,
+				3C0A7B272332459100599B75 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCC5DA423323ED900BF685B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCC5DC723323F3600BF685B /* Actions.swift in Sources */,
+				3CCC5DC523323F3600BF685B /* Utils.swift in Sources */,
+				3CCC5DC92332405F00BF685B /* Activity+Extensions.swift in Sources */,
+				3CCC5DCD233240C000BF685B /* ActivityFeedView.swift in Sources */,
+				3CCC5DC823323F3600BF685B /* Reducers.swift in Sources */,
+				3CCC5DCC233240BB00BF685B /* FavouritePrimesView.swift in Sources */,
+				3CCC5DCE233240C300BF685B /* ContentView.swift in Sources */,
+				3CCC5DC623323F3600BF685B /* AppState.swift in Sources */,
+				3CCC5DCB233240B500BF685B /* IsPrimeModalView.swift in Sources */,
+				3CCC5DCA233240B000BF685B /* CounterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CCC5DAC23323ED900BF685B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CCC5DB823323ED900BF685B /* PrimeFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,6 +1083,21 @@
 			isa = PBXTargetDependency;
 			target = 3C3309DC232CE12600228FCC /* ComposableArchitecture */;
 			targetProxy = 3C3309F0232CE12600228FCC /* PBXContainerItemProxy */;
+		};
+		3CCC5DB323323ED900BF685B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CCC5DA723323ED900BF685B /* PrimeFramework */;
+			targetProxy = 3CCC5DB223323ED900BF685B /* PBXContainerItemProxy */;
+		};
+		3CCC5DB523323ED900BF685B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C9DAB71232B05D80020C4BC /* Primes */;
+			targetProxy = 3CCC5DB423323ED900BF685B /* PBXContainerItemProxy */;
+		};
+		3CCC5DBC23323ED900BF685B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CCC5DA723323ED900BF685B /* PrimeFramework */;
+			targetProxy = 3CCC5DBB23323ED900BF685B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1485,6 +1657,100 @@
 			};
 			name = Release;
 		};
+		3CCC5DC023323ED900BF685B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JP5YDXJS2P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PrimeFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.danwallace.PrimeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CCC5DC123323ED900BF685B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JP5YDXJS2P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PrimeFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.danwallace.PrimeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CCC5DC323323ED900BF685B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP5YDXJS2P;
+				INFOPLIST_FILE = PrimeFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.danwallace.PrimeFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Primes.app/Primes";
+			};
+			name = Debug;
+		};
+		3CCC5DC423323ED900BF685B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JP5YDXJS2P;
+				INFOPLIST_FILE = PrimeFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nz.co.danwallace.PrimeFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Primes.app/Primes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1574,6 +1840,24 @@
 			buildConfigurations = (
 				3C9DAB87232B05DA0020C4BC /* Debug */,
 				3C9DAB88232B05DA0020C4BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCC5DBF23323ED900BF685B /* Build configuration list for PBXNativeTarget "PrimeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCC5DC023323ED900BF685B /* Debug */,
+				3CCC5DC123323ED900BF685B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CCC5DC223323ED900BF685B /* Build configuration list for PBXNativeTarget "PrimeFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CCC5DC323323ED900BF685B /* Debug */,
+				3CCC5DC423323ED900BF685B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

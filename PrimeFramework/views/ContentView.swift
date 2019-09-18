@@ -9,11 +9,11 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct ContentView: View {
+public struct ContentView: View {
     
     @ObservedObject var store: Store<AppState, AppAction>
     
-    var body: some View {
+    public var body: some View {
         NavigationView {
             List {
                 NavigationLink(destination: CounterView(store: self.store)) {
@@ -27,6 +27,10 @@ struct ContentView: View {
                 }
             }.navigationBarTitle("State management")
         }
+    }
+    
+    public init(store: Store<AppState, AppAction>) {
+        self.store = store
     }
 }
 

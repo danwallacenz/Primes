@@ -9,7 +9,7 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct CounterView: View {
+public struct CounterView: View {
     
     @ObservedObject var store: Store<AppState, AppAction>
     
@@ -21,7 +21,7 @@ struct CounterView: View {
         self.store.value.count.isPrime ? .green : .red
     }
     
-    var body: some View {
+    public var body: some View {
         VStack {
             HStack {
                 

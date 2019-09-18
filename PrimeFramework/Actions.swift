@@ -11,7 +11,7 @@ import FavoritePrimes
 import Counter
 import PrimeModal
 
-enum AppAction {
+public enum AppAction {
     case counter(CounterAction)
     case primeModal(PrimeModalAction)
     case favouritePrimes(FavouritePrimesAction)

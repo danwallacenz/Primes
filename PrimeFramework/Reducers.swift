@@ -18,11 +18,11 @@ let _appReducer: (inout AppState, AppAction) -> Void = combine(
     pullback(primeModalReducer,         value:  \.primeModal,       action: \.primeModal),
     pullback(favouritePrimesReducer,    value:  \.favouritePrimes,  action: \.favouritePrimes)
 )
-let appReducer = pullback(_appReducer, value: \.self, action: \.self)
+public let appReducer = pullback(_appReducer, value: \.self, action: \.self)
 
 // MARK: - Aspect activityFeed
 
-func activityFeed(
+public func activityFeed(
     _ reducer: @escaping (inout AppState, AppAction) -> Void)
     -> (inout AppState, AppAction) -> Void {
         

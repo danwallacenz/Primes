@@ -9,7 +9,7 @@
 import Foundation
 import PrimeModal
 
-struct AppState {
+public struct AppState {
     
     var count = 0 {
         didSet { saveState() }
@@ -55,7 +55,7 @@ extension AppState {
 
 extension AppState: Codable {
     
-    static func loadOrCreateAppState() -> AppState {
+    public static func loadOrCreateAppState() -> AppState {
         if let jsonData = UserDefaults.standard.data(forKey: "APP_STATE"),
             let appState = try? JSONDecoder().decode(AppState.self, from: jsonData) {
             return appState
@@ -76,7 +76,7 @@ extension AppState: Codable {
 // MARK:- CustomStringConvertible
 
 extension AppState: CustomStringConvertible {
-    var description: String {
+    public var description: String {
         let activity = activityFeed.reversed().reduce("") {
             $0 + "\($1)\n"
         }

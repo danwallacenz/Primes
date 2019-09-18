@@ -225,7 +225,6 @@
 		3C9DAB91232B0F9F0020C4BC /* FavouritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePrimesView.swift; sourceTree = "<group>"; };
 		3C9DAB93232B46A60020C4BC /* Activity+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity+Extensions.swift"; sourceTree = "<group>"; };
 		3C9DAB95232B54A30020C4BC /* ActivityFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityFeedView.swift; sourceTree = "<group>"; };
-		3CCC5DA223323E2800BF685B /* Primes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Primes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3CCC5DA823323ED900BF685B /* PrimeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrimeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCC5DAA23323ED900BF685B /* PrimeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimeFramework.h; sourceTree = "<group>"; };
 		3CCC5DAB23323ED900BF685B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -424,7 +423,6 @@
 		3C9DAB69232B05D80020C4BC = {
 			isa = PBXGroup;
 			children = (
-				3CCC5DA223323E2800BF685B /* Primes.playground */,
 				3C9DAB74232B05D80020C4BC /* Primes */,
 				3C330977232CE0EF00228FCC /* Counter */,
 				3C330984232CE0EF00228FCC /* CounterTests */,

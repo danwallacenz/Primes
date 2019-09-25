@@ -27,12 +27,13 @@ newStore.value
 newStore.send(())
 newStore.send(())
 newStore.send(())
-newStore.value
 
+newStore.value
 store.value
 
 store.send(())
 store.send(())
 store.send(())
+
 store.value
 newStore.value

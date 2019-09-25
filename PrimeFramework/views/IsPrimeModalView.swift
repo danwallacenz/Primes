@@ -8,10 +8,11 @@
 
 import SwiftUI
 import ComposableArchitecture
+import PrimeModal
 
 struct IsPrimeModalView: View {
     
-    @ObservedObject var store: Store<AppState, AppAction>
+    @ObservedObject var store: Store<PrimeModalState, AppAction>
     
     var body: some View {
         VStack {

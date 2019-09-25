@@ -11,14 +11,14 @@ import ComposableArchitecture
 
 struct FavoritePrimesView: View {
 
-    @ObservedObject var store: Store<AppState, AppAction>
+    @ObservedObject var store: Store<[Int], AppAction>
     
     var body: some View {
-        List { ForEach(self.store.value.favouritePrimes.reversed()) { favourite in
-            
+        List { ForEach(self.store.value.reversed()) { favourite in
+
                 Text("\(favourite)")
         
-            }.onDelete(perform: { indexSet in
+        }.onDelete(perform: { indexSet in
                 
                 self.store.send(.favouritePrimes(.deleteFavouritePrime(indexSet)))
                 

@@ -22,7 +22,8 @@ public func favouritePrimesReducer(state: inout [Int], action: FavouritePrimesAc
     switch action {
     case .deleteFavouritePrime(let indexSet):
         for index in indexSet {
-            let prime = state[index]
+            let prime = state.reversed()[index] // note reversed
+            print("deleting \(prime)")
             state.removeAll(where: { $0 == prime })
         }
     }

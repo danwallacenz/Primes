@@ -6,6 +6,8 @@ public final class Store<Value, Action>: ObservableObject {
     
     // can only mutate via send(_:)
     @Published public private(set) var value: Value
+    
+    private var cancellable: Cancellable?
 
     public init(initialValue: Value,
                 reducer: @escaping (inout Value, Action) -> Void
@@ -18,14 +20,21 @@ public final class Store<Value, Action>: ObservableObject {
         reducer(&value, action)
     }
     
-    public func view<LocalValue>(_ f: @escaping (Value) -> LocalValue) -> Store<LocalValue, Action> {
-        return Store<LocalValue, Action>(
+    public func view<LocalValue>(
+        _ f: @escaping (Value) -> LocalValue
+    ) -> Store<LocalValue, Action> {
+        
+        let localStore = Store<LocalValue, Action>(
             initialValue: f(self.value),
             reducer: { localValue, action in
                 self.send(action)
                 localValue = f(self.value)
             }
         )
+        localStore.cancellable = self.$value.sink { [weak localStore] newValue in
+            localStore?.value = f(newValue)
+        }
+        return localStore
     }
 }
 

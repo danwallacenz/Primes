@@ -9,9 +9,11 @@
 import SwiftUI
 import ComposableArchitecture
 
+typealias CounterViewState = (count: Int, favouritePrimes: [Int])
+
 public struct CounterView: View {
     
-    @ObservedObject var store: Store<AppState, AppAction>
+    @ObservedObject var store: Store<CounterViewState, AppAction>
     
     @State private var isThisPrimeModalPresented: Bool = false
     @State var alertNthPrime: Int?
@@ -57,7 +59,7 @@ public struct CounterView: View {
         }.font(.title)
         .navigationBarTitle("Counter demo")
         .sheet(isPresented: $isThisPrimeModalPresented)
-            { IsPrimeModalView(store: self.store) }
+        { IsPrimeModalView(store: self.store.view { ($0.count, $0.favouritePrimes) }) }
         .alert(item: $alertNthPrime) { nthPrime in
             Alert(
                 title: Text("The \(ordinal(self.store.value.count)) prime is \(nthPrime)"),

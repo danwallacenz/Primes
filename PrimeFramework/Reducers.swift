@@ -33,7 +33,7 @@ public func activityFeed(
         
         case let .favouritePrimes(.deleteFavouritePrime(indexSet)):
             for index in indexSet {
-                let prime = state.favouritePrimes[index]
+                let prime = state.favouritePrimes.reversed()[index] // note reversed
                 state.activityFeed.append(AppState.Activity(timestamp: Date(), type: .removedFavoritePrime(prime)))
             }
        

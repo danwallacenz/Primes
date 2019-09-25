@@ -8,13 +8,24 @@ public final class Store<Value, Action>: ObservableObject {
     @Published public private(set) var value: Value
 
     public init(initialValue: Value,
-         reducer: @escaping (inout Value, Action) -> Void) {
+                reducer: @escaping (inout Value, Action) -> Void
+    ) {
         self.value = initialValue
         self.reducer = reducer
     }
     
     public func send(_ action: Action) {
         reducer(&value, action)
+    }
+    
+    public func view<LocalValue>(_ f: @escaping (Value) -> LocalValue) -> Store<LocalValue, Action> {
+        return Store<LocalValue, Action>(
+            initialValue: f(self.value),
+            reducer: { localValue, action in
+                self.send(action)
+                localValue = f(self.value)
+            }
+        )
     }
 }
 
